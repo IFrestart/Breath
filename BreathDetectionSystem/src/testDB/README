@@ -1,0 +1,36 @@
+设置LD_LIBRARY_PATH环境变量,参考下面设置:
+
+SRCROOT=~/NewServer/src
+LD_LIBRARY_PATH=$SRCROOT/ini:$SRCROOT/log:$SRCROOT/JRTPItf/jrtplib-2.7:$LD_LIBRARY_PATH
+
+CVS路径:
+CVSROOT=:pserver:$USER@192.168.1.200:/home/cvs/server
+
+所需模块:
+cvs {
+	
+	
+	
+	
+	
+	
+	}checkout NewServer/src/makefile
+cvs checkout NewServer/src/makefile.def
+cvs checkout NewServer/src/CommBase
+cvs checkout NewServer/src/BaseServ
+cvs checkout NewServer/src/tests
+cvs checkout NewServer/src/ini
+cvs checkout NewServer/src/log
+cvs checkout NewServer/src/TestServ
+cvs checkout NewServer/src/DBCommServ
+
+先在要src路径下执行make
+其中TestServ目录是一个测试程序,可用于各模块的测试
+	DBCommServ目录是DB的工作目录
+
+工作服务器:
+192.168.1.50
+
+用户名:密码
+white:white
+

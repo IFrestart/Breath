@@ -1,0 +1,21 @@
+<SubCtrlServ>
+	<ClientAcceptor>
+		<IP>0.0.0.0</IP>
+		<TcpPort>7502</TcpPort>
+	</ClientAcceptor>	
+
+	<CenterCtrlServ>
+                <IP>10.0.0.50</IP>
+                <Port>7500</Port>
+        </CenterCtrlServ>
+
+	<TransDataServ>
+                <IP>10.0.0.50</IP>
+                <Port>7500</Port>
+        </TransDataServ>
+
+	<ServerVersionInfo>
+                <VersionId>65536</VersionId>
+        </ServerVersionInfo>
+	<SerialNumber>10010001</SerialNumber>
+</SubCtrlServ>

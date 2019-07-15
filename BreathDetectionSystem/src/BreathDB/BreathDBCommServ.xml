@@ -1,0 +1,29 @@
+<DBCommServ>
+	<Acceptor>
+		<IP>192.168.1.81</IP>
+		<Port>17555</Port>
+	</Acceptor>	
+
+	<EDUDBSvr>
+		<count>1</count>
+		<ipaddress0>192.168.1.81</ipaddress0>
+		<port0>3306</port0>
+		<user0>mmtsimple</user0>
+		<password0>simple.dbcomm</password0>
+		<dbname0>breath_db</dbname0>
+	</EDUDBSvr>	
+	
+	<SelfInfo>
+		<ServerType>32</ServerType>
+		<ServerIndex>1</ServerIndex>
+	</SelfInfo>
+
+	<Trace>
+		<MsgTrace>127</MsgTrace>
+		<MsgMod>31</MsgMod>
+	</Trace>	
+</DBCommServ>
+
+GRANT SELECT,INSERT,UPDATE,DELETE,CREATE,DROP,ALTER ON 数据库名.* TO 数据库名@localhost IDENTIFIED BY '密码';
+grant all privileges on breath_db.* to mmtsimple@'%' identified by 'simple.dbcomm' with grant option
+grant all on breath_db.* to mmtsimple@'%' identified by 'simple.dbcomm' with grant option

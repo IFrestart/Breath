@@ -1,0 +1,8 @@
+; FCNetAC.def : 定义模块参数。
+
+LIBRARY      "FCNetACLib.DLL"
+
+EXPORTS
+
+	FCNetACInit
+	FCNetACUninit

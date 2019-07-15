@@ -1,0 +1,14 @@
+<CenterCtrlServ>
+	<ClientAcceptor>
+		<IP>0.0.0.0</IP>
+		<TcpPort>7500</TcpPort>
+	</ClientAcceptor>	
+	<DBCommServ>
+		<IP>10.0.0.50</IP>
+		<Port>17555</Port>
+	</DBCommServ>	
+
+	<ServerVersionInfo>
+                <VersionId>65536</VersionId>
+        </ServerVersionInfo>
+</CenterCtrlServ>

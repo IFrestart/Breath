@@ -1,0 +1,23 @@
+include ../../makefile.def.arm
+LIBS=libMyAC
+LIBSPATH=../../lib
+OBJS=$(patsubst %.cpp,%.o,$(wildcard *.cpp))
+
+all:$(OBJS) $(LIBS).so $(LIBS).a
+
+%.o:%.cpp ../include/%.h
+	$(CC) $< $(CCFLAGS) -o $@
+
+$(LIBS).so:$(OBJS)
+	#arm-linux-gcc -Wall -mbig-endian -shared $^ -o $(LIBS).so
+	arm-linux-androideabi-gcc -Wall -mbig-endian -shared $^ -o $(LIBS).so
+	mv $(LIBS).so $(LIBSPATH)
+
+$(LIBS).a:$(OBJS)
+	#arm-linux-ar r $@ $^
+	arm-linux-androideabi-ar r $@ $^
+	mv $(LIBS).a $(LIBSPATH)
+
+clean:
+	$(RM) $(OBJS)
+

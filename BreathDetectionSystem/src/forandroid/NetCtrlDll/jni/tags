@@ -1,0 +1,215 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+APP_MODULES	Application.mk	/^APP_MODULES := NetCtrl$/;"	m
+APP_PLATFORM	Application.mk	/^APP_PLATFORM := android-9$/;"	m
+APP_STL	Application.mk	/^APP_STL := gnustl_static$/;"	m
+AllConnectClose	NetCtrlCall.cpp	/^int CNetCtrlCall::AllConnectClose()$/;"	f	class:CNetCtrlCall
+AuthServSockEvent	include/AuthServSockEvent.h	/^	AuthServSockEvent(CNetCtrlCall* pServ) : m_pServ(pServ),m_pDataCallBack(NULL)$/;"	f	class:AuthServSockEvent
+AuthServSockEvent	include/AuthServSockEvent.h	/^class AuthServSockEvent : public ISockEventCallBack$/;"	c
+CBaseState	BaseState.cpp	/^CBaseState::CBaseState(unsigned short nResult,unsigned short maxTimes) $/;"	f	class:CBaseState
+CBaseState	include/BaseState.h	/^class CBaseState$/;"	c
+CNetCtrlCall	NetCtrlCall.cpp	/^CNetCtrlCall::CNetCtrlCall(void) $/;"	f	class:CNetCtrlCall
+CNetCtrlCall	include/NetCtrlCall.h	/^class CNetCtrlCall $/;"	c
+CSLoginAuth	include/AllState.h	/^class CSLoginAuth : public CBaseState$/;"	c
+CSLoginAuthRequest	include/AllState.h	/^class CSLoginAuthRequest : public CBaseState$/;"	c
+CSLoginNormal	include/AllState.h	/^class CSLoginNormal: public CBaseState$/;"	c
+CSLogoutAuth	include/AllState.h	/^class CSLogoutAuth : public CBaseState$/;"	c
+CSTransJoin	include/AllState.h	/^class CSTransJoin : public CBaseState$/;"	c
+CSTransLeave	include/AllState.h	/^class CSTransLeave : public CBaseState$/;"	c
+CloseTcpAuthServConnect	NetCtrlCall.cpp	/^int CNetCtrlCall:: CloseTcpAuthServConnect()$/;"	f	class:CNetCtrlCall
+CloseTcpTransServConnect	NetCtrlCall.cpp	/^int CNetCtrlCall:: CloseTcpTransServConnect()$/;"	f	class:CNetCtrlCall
+ConnectAuthServ	NetCtrlCall.cpp	/^int CNetCtrlCall::ConnectAuthServ()$/;"	f	class:CNetCtrlCall
+ConnectTranTcpServ	NetCtrlCall.cpp	/^int CNetCtrlCall::ConnectTranTcpServ()$/;"	f	class:CNetCtrlCall
+CreateNetCtrlObj	NetCtrlDll.cpp	/^IBaseCommCall * CreateNetCtrlObj(void)$/;"	f
+CreateNetCtrlObj	NetCtrlDll.cpp	/^IBaseCommCall * WINAPI CreateNetCtrlObj(void)$/;"	f
+Debug_MyTrance_	include/NetCtrlInt.h	12;"	d
+DestroyNetCtrlObj	NetCtrlDll.cpp	/^void  DestroyNetCtrlObj(IBaseCommCall* pMyCommCall)$/;"	f
+DestroyNetCtrlObj	NetCtrlDll.cpp	/^void WINAPI DestroyNetCtrlObj(IBaseCommCall* pMyCommCall)$/;"	f
+DllMain	NetCtrlDll.cpp	/^BOOL APIENTRY DllMain( HANDLE hModule, $/;"	f
+E	PacketManager.cpp	/^PacketManager::E::E()$/;"	f	class:PacketManager::E
+E	include/PacketManager.h	/^	struct E$/;"	s	class:PacketManager
+G	Android.mk	/^G=..\/..\/$/;"	m
+GetCommCallBack	include/NetCtrlCall.h	/^	IBaseCommCallBack* GetCommCallBack(void){return m_pCommCallBack;}$/;"	f	class:CNetCtrlCall
+GetDataReciveCallBack	include/NetCtrlCall.h	/^	INetACDataCallBack* GetDataReciveCallBack(void){return m_pNetACDataCallBack;}	\/\/add 2011-8-1$/;"	f	class:CNetCtrlCall
+GetMyselfInfo	NetCtrlCall.cpp	/^UserInfoEx* CNetCtrlCall::GetMyselfInfo(void)$/;"	f	class:CNetCtrlCall
+IBaseCommCall	include/NetCtrlInt.h	/^class IBaseCommCall $/;"	c
+IBaseCommCallBack	include/NetCtrlInt.h	/^class IBaseCommCallBack$/;"	c
+INetACDataCallBack	include/NetCtrlInt.h	/^class INetACDataCallBack$/;"	c
+KeepAliveTimer_ID	include/NetCtrlCall.h	/^	enum{ 	 SendDataTimer_ID = 1, SendDataTimer_VALUE = 2000,KeepAliveTimer_ID = 2, KeepAliveTimer_VALUE = 10000,LOGIN_TIME_OUT_VALUE = 600};$/;"	e	enum:CNetCtrlCall::__anon3
+KeepAliveTimer_VALUE	include/NetCtrlCall.h	/^	enum{ 	 SendDataTimer_ID = 1, SendDataTimer_VALUE = 2000,KeepAliveTimer_ID = 2, KeepAliveTimer_VALUE = 10000,LOGIN_TIME_OUT_VALUE = 600};$/;"	e	enum:CNetCtrlCall::__anon3
+LIBS	makefile	/^LIBS=libNetCtrl$/;"	m
+LIBSPATH	makefile	/^LIBSPATH=..\/..\/llib$/;"	m
+LOCAL_CFLAGS	Android.mk	/^LOCAL_CFLAGS    := -Werror$/;"	m
+LOCAL_C_INCLUDES	Android.mk	/^LOCAL_C_INCLUDES := $(ACE_ROOT) $(LOCAL_PATH)\/include $GCommBase\/jni\/include $GSendConfig\/jni\/include\\$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE    := CommBase$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE    := NetCtrl$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE    := jrtp$/;"	m
+LOCAL_MODULE	Android.mk	/^LOCAL_MODULE    := socks5$/;"	m
+LOCAL_PATH	Android.mk	/^LOCAL_PATH:= $(call my-dir)$/;"	m
+LOCAL_SHARED_LIBRARIES	Android.mk	/^LOCAL_SHARED_LIBRARIES := socks5 jrtp CommBase$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := ..\/..\/lib\/jni\/libCommBase.so$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := ..\/..\/lib\/jni\/libjrtp.so$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := ..\/..\/lib\/jni\/libsocks5.so$/;"	m
+LOCAL_SRC_FILES	Android.mk	/^LOCAL_SRC_FILES := AllState.cpp BaseState.cpp NetCtrlCall.cpp PacketManager.cpp TransServSockEvent.cpp AuthServSockEvent.cpp NetCtrlDll.cpp $/;"	m
+LOGINSTATE	include/AllState.h	/^namespace  LOGINSTATE$/;"	n
+LOGIN_TIME_OUT_VALUE	include/NetCtrlCall.h	/^	enum{ 	 SendDataTimer_ID = 1, SendDataTimer_VALUE = 2000,KeepAliveTimer_ID = 2, KeepAliveTimer_VALUE = 10000,LOGIN_TIME_OUT_VALUE = 600};$/;"	e	enum:CNetCtrlCall::__anon3
+MAX_USER_PASSWORD_LEN	include/NetCtrlInt.h	13;"	d
+NetACInitialize	NetCtrlCall.cpp	/^int CNetCtrlCall::NetACInitialize(const Addr&  addr, 	IBaseCommCallBack * lpCommCallBack, USHORT nLocalPortBind)$/;"	f	class:CNetCtrlCall
+NetACLogin	NetCtrlCall.cpp	/^int CNetCtrlCall::NetACLogin(const BYTE* lpLoginInfo, $/;"	f	class:CNetCtrlCall
+NetACLogout	NetCtrlCall.cpp	/^int CNetCtrlCall::NetACLogout(void)$/;"	f	class:CNetCtrlCall
+NetACRegister0	NetCtrlCall.cpp	/^int CNetCtrlCall::NetACRegister0(void)$/;"	f	class:CNetCtrlCall
+NetACRegister1	NetCtrlCall.cpp	/^int CNetCtrlCall::NetACRegister1(BYTE byVersionType, DWORD dwTopOrganID,WORD wRegType, DWORD dwKey, LPCTSTR lpszCode, $/;"	f	class:CNetCtrlCall
+NetACSendDataToDB	NetCtrlCall.cpp	/^int CNetCtrlCall::NetACSendDataToDB(unsigned short subPdu,const void* lpData,unsigned long dwSize ,bool bSync)$/;"	f	class:CNetCtrlCall
+NetACSendDataToServ	NetCtrlCall.cpp	/^int CNetCtrlCall::NetACSendDataToServ(unsigned short subPdu,const void* lpData,unsigned long dwSize )$/;"	f	class:CNetCtrlCall
+NetACUnInitialize	NetCtrlCall.cpp	/^int CNetCtrlCall::NetACUnInitialize()$/;"	f	class:CNetCtrlCall
+OBJS	makefile	/^OBJS=$(patsubst %.cpp,%.o,$(wildcard *.cpp))$/;"	m
+OnCallBack	NetCtrlCall.cpp	/^int CNetCtrlCall::OnCallBack(unsigned short errcode,bool lockFlag)$/;"	f	class:CNetCtrlCall
+OnConnectionClosed	AuthServSockEvent.cpp	/^int AuthServSockEvent::OnConnectionClosed(ACE_HANDLE sock)$/;"	f	class:AuthServSockEvent
+OnConnectionClosed	TransServSockEvent.cpp	/^int TransServSockEvent::OnConnectionClosed(ACE_HANDLE sock)$/;"	f	class:TransServSockEvent
+OnNewConnection	AuthServSockEvent.cpp	/^int AuthServSockEvent::OnNewConnection(ACE_HANDLE sock)$/;"	f	class:AuthServSockEvent
+OnNewConnection	TransServSockEvent.cpp	/^int TransServSockEvent::OnNewConnection(ACE_HANDLE sock)$/;"	f	class:TransServSockEvent
+OnPacketReceived	TransServSockEvent.cpp	/^int TransServSockEvent::OnPacketReceived(ACE_HANDLE sock, unsigned short pdutype,$/;"	f	class:TransServSockEvent
+OnPacketTimeOut	NetCtrlCall.cpp	/^int CNetCtrlCall::OnPacketTimeOut(unsigned short pdutype, const void* data, unsigned long len)$/;"	f	class:CNetCtrlCall
+OnTCPPacketReceived	AuthServSockEvent.cpp	/^int AuthServSockEvent::OnTCPPacketReceived(ACE_HANDLE sock, unsigned short pdutype,$/;"	f	class:AuthServSockEvent
+OnTCPPacketReceived	TransServSockEvent.cpp	/^int TransServSockEvent::OnTCPPacketReceived(ACE_HANDLE sock, unsigned short pdutype,$/;"	f	class:TransServSockEvent
+OnTimer	NetCtrlCall.cpp	/^int CNetCtrlCall::OnTimer(unsigned long tid, void* arg)$/;"	f	class:CNetCtrlCall
+OnTimer	PacketManager.cpp	/^int PacketManager::OnTimer(unsigned long timerID, void* arg)$/;"	f	class:PacketManager
+OnUDPPacketReceived	AuthServSockEvent.cpp	/^int AuthServSockEvent::OnUDPPacketReceived(ACE_HANDLE sock, unsigned short pdutype,$/;"	f	class:AuthServSockEvent
+OnUDPPacketReceived	TransServSockEvent.cpp	/^int TransServSockEvent::OnUDPPacketReceived(ACE_HANDLE sock, unsigned short pdutype,$/;"	f	class:TransServSockEvent
+PFN_NETCTRLOBJ_CREATE	include/NetCtrlDll.h	/^typedef IBaseCommCall * (WINAPI *PFN_NETCTRLOBJ_CREATE)(void);$/;"	t
+PFN_NETCTRLOBJ_DESTROY	include/NetCtrlDll.h	/^typedef void (WINAPI *PFN_NETCTRLOBJ_DESTROY)(IBaseCommCall *pMyCommCall);$/;"	t
+PacketManager	PacketManager.cpp	/^PacketManager::PacketManager(IPacketTimeOut* pCallBack, unsigned short timeout, unsigned short n)$/;"	f	class:PacketManager
+PacketManager	include/PacketManager.h	/^class PacketManager : public ITimerEventCallBack$/;"	c
+RegCallBackWndClass	NetCtrlCall.cpp	/^BOOL CNetCtrlCall::RegCallBackWndClass(void)$/;"	f	class:CNetCtrlCall
+SAUTHREQUEST	include/AllState.h	/^	{	SAUTHREQUEST = 1, SLOGINAUTH = 2, SJOINSTRANS = 3, SLOGOUTAUTH = 4, SLEAVETRAS = 5,SNORMAL = 6,};$/;"	e	enum:LOGINSTATE::__anon2
+SJOINSTRANS	include/AllState.h	/^	{	SAUTHREQUEST = 1, SLOGINAUTH = 2, SJOINSTRANS = 3, SLOGOUTAUTH = 4, SLEAVETRAS = 5,SNORMAL = 6,};$/;"	e	enum:LOGINSTATE::__anon2
+SLEAVETRAS	include/AllState.h	/^	{	SAUTHREQUEST = 1, SLOGINAUTH = 2, SJOINSTRANS = 3, SLOGOUTAUTH = 4, SLEAVETRAS = 5,SNORMAL = 6,};$/;"	e	enum:LOGINSTATE::__anon2
+SLOGINAUTH	include/AllState.h	/^	{	SAUTHREQUEST = 1, SLOGINAUTH = 2, SJOINSTRANS = 3, SLOGOUTAUTH = 4, SLEAVETRAS = 5,SNORMAL = 6,};$/;"	e	enum:LOGINSTATE::__anon2
+SLOGOUTAUTH	include/AllState.h	/^	{	SAUTHREQUEST = 1, SLOGINAUTH = 2, SJOINSTRANS = 3, SLOGOUTAUTH = 4, SLEAVETRAS = 5,SNORMAL = 6,};$/;"	e	enum:LOGINSTATE::__anon2
+SNORMAL	include/AllState.h	/^	{	SAUTHREQUEST = 1, SLOGINAUTH = 2, SJOINSTRANS = 3, SLOGOUTAUTH = 4, SLEAVETRAS = 5,SNORMAL = 6,};$/;"	e	enum:LOGINSTATE::__anon2
+SendAuthRequest	NetCtrlCall.cpp	/^int CNetCtrlCall::SendAuthRequest()$/;"	f	class:CNetCtrlCall
+SendData	AllState.cpp	/^int CSLoginAuth::SendData(void* obj)$/;"	f	class:CSLoginAuth
+SendData	AllState.cpp	/^int CSLoginAuthRequest::SendData(void* obj)$/;"	f	class:CSLoginAuthRequest
+SendData	AllState.cpp	/^int CSLogoutAuth::SendData(void* obj)$/;"	f	class:CSLogoutAuth
+SendData	AllState.cpp	/^int CSTransJoin::SendData(void* obj)$/;"	f	class:CSTransJoin
+SendData	AllState.cpp	/^int CSTransLeave::SendData(void* obj)$/;"	f	class:CSTransLeave
+SendData	include/AllState.h	/^	int SendData(void*  obj){return 0;}$/;"	f	class:CSLoginNormal
+SendData	include/BaseState.h	/^	virtual int SendData(void * obj){return 0;}	\/\/modif 2013-2-27$/;"	f	class:CBaseState
+SendDataTimer_ID	include/NetCtrlCall.h	/^	enum{ 	 SendDataTimer_ID = 1, SendDataTimer_VALUE = 2000,KeepAliveTimer_ID = 2, KeepAliveTimer_VALUE = 10000,LOGIN_TIME_OUT_VALUE = 600};$/;"	e	enum:CNetCtrlCall::__anon3
+SendDataTimer_VALUE	include/NetCtrlCall.h	/^	enum{ 	 SendDataTimer_ID = 1, SendDataTimer_VALUE = 2000,KeepAliveTimer_ID = 2, KeepAliveTimer_VALUE = 10000,LOGIN_TIME_OUT_VALUE = 600};$/;"	e	enum:CNetCtrlCall::__anon3
+SendJoinRequest	NetCtrlCall.cpp	/^int	CNetCtrlCall::SendJoinRequest()$/;"	f	class:CNetCtrlCall
+SendKeepAlive	NetCtrlCall.cpp	/^int CNetCtrlCall::SendKeepAlive()$/;"	f	class:CNetCtrlCall
+SendLeaveRequest	NetCtrlCall.cpp	/^int	CNetCtrlCall::SendLeaveRequest()$/;"	f	class:CNetCtrlCall
+SendLoginRequest	NetCtrlCall.cpp	/^int CNetCtrlCall::SendLoginRequest()$/;"	f	class:CNetCtrlCall
+SendLogoutRequest	NetCtrlCall.cpp	/^int CNetCtrlCall::SendLogoutRequest()$/;"	f	class:CNetCtrlCall
+SendTcpDataToAuthServ	NetCtrlCall.cpp	/^int CNetCtrlCall::SendTcpDataToAuthServ(unsigned short pdutype,const void* buf, unsigned long len) \/\/add 2-13-3-5$/;"	f	class:CNetCtrlCall
+SendTcpDataToTransServ	NetCtrlCall.cpp	/^int CNetCtrlCall::SendTcpDataToTransServ(unsigned short pdutype,const void* buf, unsigned long len) \/\/add 2-13-3-5$/;"	f	class:CNetCtrlCall
+SetMyselfInfo	NetCtrlCall.cpp	/^void CNetCtrlCall::SetMyselfInfo(const UserInfo& userInfo)$/;"	f	class:CNetCtrlCall
+State	include/AllState.h	/^	int  State() const { return (int)LOGINSTATE::SAUTHREQUEST ;}$/;"	f	class:CSLoginAuthRequest
+State	include/AllState.h	/^	int  State() const { return (int)LOGINSTATE::SLEAVETRAS ;}$/;"	f	class:CSTransLeave
+State	include/AllState.h	/^	int  State() const { return (int)LOGINSTATE::SLOGINAUTH ;}$/;"	f	class:CSLoginAuth
+State	include/AllState.h	/^	int  State() const { return (int)LOGINSTATE::SLOGOUTAUTH ;}$/;"	f	class:CSLogoutAuth
+State	include/AllState.h	/^	int  State() const { return (int)LOGINSTATE::SNORMAL ;}$/;"	f	class:CSLoginNormal
+State	include/AllState.h	/^	int State() const { return (int)LOGINSTATE::SJOINSTRANS ;}$/;"	f	class:CSTransJoin
+State	include/BaseState.h	/^	virtual int State()const {return 0;}$/;"	f	class:CBaseState
+TIMERID	include/PacketManager.h	/^	enum {TIMERID = 1, TIMERINTERVAL = 1000};$/;"	e	enum:PacketManager::__anon1
+TIMERINTERVAL	include/PacketManager.h	/^	enum {TIMERID = 1, TIMERINTERVAL = 1000};$/;"	e	enum:PacketManager::__anon1
+TcpTransServConnectException	NetCtrlCall.cpp	/^int CNetCtrlCall::TcpTransServConnectException()$/;"	f	class:CNetCtrlCall
+TransServSockEvent	include/TransServSockEvent.h	/^	TransServSockEvent(CNetCtrlCall* pServ) : m_pServ(pServ)$/;"	f	class:TransServSockEvent
+TransServSockEvent	include/TransServSockEvent.h	/^class TransServSockEvent : public ISockEventCallBack $/;"	c
+UserInfoExArray	include/NetCtrlInt.h	/^typedef std::vector<UserInfoEx> UserInfoExArray;  \/\/供在线查找用$/;"	t
+WEBCON_HAS_STDLOG	include/NetCtrlCall.h	29;"	d
+__ALLSTATE_H__	include/AllState.h	2;"	d
+__AUTHSERVSOCKEVENT_H__	include/AuthServSockEvent.h	13;"	d
+__BASESTATE_H__	include/BaseState.h	4;"	d
+__NETCTRLCALL_H__	include/NetCtrlCall.h	4;"	d
+__NETCTRLDLL_H__	include/NetCtrlDll.h	2;"	d
+__NETCTRLINT_H__	include/NetCtrlInt.h	4;"	d
+__PACKETMANAGER_H__	include/PacketManager.h	13;"	d
+__TRANSSERVSOCKEVENT_H__	include/TransServSockEvent.h	13;"	d
+addSendTimes	include/BaseState.h	/^	void addSendTimes(){ m_wSendTimes++;}$/;"	f	class:CBaseState
+addTime_	include/PacketManager.h	/^		unsigned long	addTime_;$/;"	m	struct:PacketManager::E
+changeState	NetCtrlCall.cpp	/^void CNetCtrlCall::changeState(unsigned short sid,bool lockFlag)$/;"	f	class:CNetCtrlCall
+checkPos_	include/PacketManager.h	/^	unsigned short	checkPos_;$/;"	m	class:PacketManager
+checkid	PacketManager.cpp	/^bool PacketManager::checkid(unsigned long id)$/;"	f	class:PacketManager
+clear	BaseState.cpp	/^void CBaseState::clear()$/;"	f	class:CBaseState
+clear	PacketManager.cpp	/^void PacketManager::E::clear()$/;"	f	class:PacketManager::E
+clear	PacketManager.cpp	/^void PacketManager::clear()$/;"	f	class:PacketManager
+clear	PacketManager.cpp	/^void PacketManager::clear(unsigned long id)$/;"	f	class:PacketManager
+data_	include/PacketManager.h	/^		const char*	data_;$/;"	m	struct:PacketManager::E
+dump	PacketManager.cpp	/^void PacketManager::E::dump(const E& e)$/;"	f	class:PacketManager::E
+dump	PacketManager.cpp	/^void PacketManager::dump() const$/;"	f	class:PacketManager
+e_const_it	include/PacketManager.h	/^	typedef std::vector<E>::const_iterator	e_const_it;$/;"	t	class:PacketManager
+e_it	include/PacketManager.h	/^	typedef std::vector<E>::iterator	e_it;$/;"	t	class:PacketManager
+f_lpszClassName	include/NetCtrlCall.h	/^	static LPCTSTR f_lpszClassName; \/\/\/<回调窗口类名$/;"	m	class:CNetCtrlCall
+get	PacketManager.cpp	/^unsigned long PacketManager::get()$/;"	f	class:PacketManager
+getAddTime	include/BaseState.h	/^	unsigned long getAddTime(){return m_addTime_ ;}$/;"	f	class:CBaseState
+getAuthServConnectSock	include/NetCtrlCall.h	/^	ACE_HANDLE getAuthServConnectSock(){return m_AuthConnector.getSock();}$/;"	f	class:CNetCtrlCall
+getMaxSendTimes	include/BaseState.h	/^	unsigned short getMaxSendTimes(){return m_wMaxSendTimes;}$/;"	f	class:CBaseState
+getOutTimes	PacketManager.cpp	/^unsigned short PacketManager::getOutTimes(unsigned long id)$/;"	f	class:PacketManager
+getSendTimes	include/BaseState.h	/^	unsigned short getSendTimes(){return m_wSendTimes;}$/;"	f	class:CBaseState
+getTransServConnectSock	include/NetCtrlCall.h	/^	ACE_HANDLE getTransServConnectSock(){return m_TransConnector.getSock();}$/;"	f	class:CNetCtrlCall
+getindex	PacketManager.cpp	/^unsigned short PacketManager::getindex(unsigned long id) {$/;"	f	class:PacketManager
+getseed	PacketManager.cpp	/^unsigned short PacketManager::getseed(unsigned long id) {$/;"	f	class:PacketManager
+hasNum_	include/PacketManager.h	/^	unsigned short	hasNum_;$/;"	m	class:PacketManager
+insertPos_	include/PacketManager.h	/^	unsigned short	insertPos_;$/;"	m	class:PacketManager
+killTimer	NetCtrlCall.cpp	/^int CNetCtrlCall::killTimer(unsigned short type)$/;"	f	class:CNetCtrlCall
+len_	include/PacketManager.h	/^		unsigned short	len_;$/;"	m	struct:PacketManager::E
+m_AuthConnector	include/NetCtrlCall.h	/^	CTCPConnector           m_AuthConnector; $/;"	m	class:CNetCtrlCall
+m_AuthServAddr	include/NetCtrlCall.h	/^	Addr				m_AuthServAddr;   \/\/认证服务器地址信息$/;"	m	class:CNetCtrlCall
+m_AuthTcpEvent	include/NetCtrlCall.h	/^	AuthServSockEvent		m_AuthTcpEvent;$/;"	m	class:CNetCtrlCall
+m_TransConnector	include/NetCtrlCall.h	/^	CTCPConnector           m_TransConnector; $/;"	m	class:CNetCtrlCall
+m_TransServAddr	include/NetCtrlCall.h	/^	Addr				m_TransServAddr;   \/\/认证服务器地址信息$/;"	m	class:CNetCtrlCall
+m_TransTcpEvent	include/NetCtrlCall.h	/^	TransServSockEvent		m_TransTcpEvent;$/;"	m	class:CNetCtrlCall
+m_addTime_	include/BaseState.h	/^	unsigned long m_addTime_;$/;"	m	class:CBaseState
+m_exceptLeave	include/NetCtrlCall.h	/^	bool                                    m_exceptLeave ;$/;"	m	class:CNetCtrlCall
+m_keepAliveTimer	include/NetCtrlCall.h	/^	CTimer				m_keepAliveTimer;$/;"	m	class:CNetCtrlCall
+m_lastAuthTime	include/NetCtrlCall.h	/^	unsigned long			m_lastAuthTime;\/\/for keepalive$/;"	m	class:CNetCtrlCall
+m_lastTransTime	include/NetCtrlCall.h	/^	unsigned long			m_lastTransTime;\/\/for keepalive$/;"	m	class:CNetCtrlCall
+m_myselfInfo	include/NetCtrlCall.h	/^	UserInfoEx			m_myselfInfo;$/;"	m	class:CNetCtrlCall
+m_nResult	include/BaseState.h	/^	unsigned short m_nResult;$/;"	m	class:CBaseState
+m_pActStatus_	include/NetCtrlCall.h	/^	CBaseState*                             m_pActStatus_;$/;"	m	class:CNetCtrlCall
+m_pCommCallBack	include/NetCtrlCall.h	/^	IBaseCommCallBack*		m_pCommCallBack; \/\/\/< 通用回调接口实例$/;"	m	class:CNetCtrlCall
+m_pDataCallBack	include/AuthServSockEvent.h	/^	INetACDataCallBack*  m_pDataCallBack ;$/;"	m	class:AuthServSockEvent
+m_pNetACDataCallBack	include/NetCtrlCall.h	/^	INetACDataCallBack*		m_pNetACDataCallBack;	\/\/数据回调接口主实例$/;"	m	class:CNetCtrlCall
+m_pServ	include/AuthServSockEvent.h	/^	CNetCtrlCall* m_pServ;$/;"	m	class:AuthServSockEvent
+m_pServ	include/TransServSockEvent.h	/^	CNetCtrlCall* m_pServ;$/;"	m	class:TransServSockEvent
+m_packetMgr	include/NetCtrlCall.h	/^	PacketManager			m_packetMgr;$/;"	m	class:CNetCtrlCall
+m_statusMuex	include/NetCtrlCall.h	/^	CMutex                                  m_statusMuex;$/;"	m	class:CNetCtrlCall
+m_szUserId	include/NetCtrlCall.h	/^	char				m_szUserId[MAX_USERID_LEN];     \/\/\/< 用户名 $/;"	m	class:CNetCtrlCall
+m_szUserPassword	include/NetCtrlCall.h	/^	char				m_szUserPassword[MAX_USER_PASSWORD_LEN];  \/\/\/< 用户密码$/;"	m	class:CNetCtrlCall
+m_wCertType	include/NetCtrlCall.h	/^	unsigned short       m_wCertType;$/;"	m	class:CNetCtrlCall
+m_wMaxSendTimes	include/BaseState.h	/^	unsigned short m_wMaxSendTimes;  \/\/若超时最多发送次数	$/;"	m	class:CBaseState
+m_wNetType	include/NetCtrlCall.h	/^	unsigned short                  m_wNetType; \/\/add 2014-4-14$/;"	m	class:CNetCtrlCall
+m_wSendTimes	include/BaseState.h	/^	unsigned short m_wSendTimes;     \/\/若超时重发次数$/;"	m	class:CBaseState
+makeid	PacketManager.cpp	/^unsigned long PacketManager::makeid(unsigned short index, unsigned short seed) {$/;"	f	class:PacketManager
+maxNum_	include/PacketManager.h	/^	unsigned short	maxNum_;$/;"	m	class:PacketManager
+movepos	PacketManager.cpp	/^void PacketManager::movepos(unsigned short& pos) {$/;"	f	class:PacketManager
+mutex_	include/PacketManager.h	/^	CMutex          mutex_;	  \/\/add by zjj 2014-5-7$/;"	m	class:PacketManager
+outTimes_	include/PacketManager.h	/^		unsigned short  outTimes_ ;  \/\/add by zjj  2011-2-25  超时次数$/;"	m	struct:PacketManager::E
+pCallBack_	include/PacketManager.h	/^	IPacketTimeOut*	pCallBack_;$/;"	m	class:PacketManager
+pduList_	include/PacketManager.h	/^	std::vector<E>	pduList_;$/;"	m	class:PacketManager
+pduType_	include/PacketManager.h	/^		unsigned short	pduType_;$/;"	m	struct:PacketManager::E
+seed_	include/PacketManager.h	/^		unsigned short	seed_;$/;"	m	struct:PacketManager::E
+set	PacketManager.cpp	/^void PacketManager::set(unsigned long id, unsigned short pdutype, const void* data, unsigned short len)$/;"	f	class:PacketManager
+setAddTime	BaseState.cpp	/^void CBaseState::setAddTime()$/;"	f	class:CBaseState
+setDataCallBack	include/AuthServSockEvent.h	/^	void setDataCallBack(INetACDataCallBack* pCallBack){ m_pDataCallBack = pCallBack;}$/;"	f	class:AuthServSockEvent
+startObject	AllState.cpp	/^int CSLoginAuth::startObject(void* obj)$/;"	f	class:CSLoginAuth
+startObject	AllState.cpp	/^int CSLoginAuthRequest::startObject(void* obj)$/;"	f	class:CSLoginAuthRequest
+startObject	AllState.cpp	/^int CSLogoutAuth::startObject(void* obj)$/;"	f	class:CSLogoutAuth
+startObject	AllState.cpp	/^int CSTransJoin::startObject(void* obj)$/;"	f	class:CSTransJoin
+startObject	AllState.cpp	/^int CSTransLeave::startObject(void* obj)$/;"	f	class:CSTransLeave
+startObject	include/AllState.h	/^	int startObject(void*  obj){return 0;}$/;"	f	class:CSLoginNormal
+startObject	include/BaseState.h	/^	virtual int startObject(void * obj){return 0;}$/;"	f	class:CBaseState
+startTimer	NetCtrlCall.cpp	/^int CNetCtrlCall::startTimer(unsigned short type)$/;"	f	class:CNetCtrlCall
+timeout_	include/PacketManager.h	/^	unsigned short	timeout_;$/;"	m	class:PacketManager
+timer_	include/PacketManager.h	/^	CTimer		timer_;$/;"	m	class:PacketManager
+unUsed	PacketManager.cpp	/^bool PacketManager::E::unUsed()$/;"	f	class:PacketManager::E
+updateAuthTime	include/NetCtrlCall.h	/^	void updateAuthTime() {m_lastAuthTime = time(NULL);}$/;"	f	class:CNetCtrlCall
+updateTransTime	include/NetCtrlCall.h	/^	void updateTransTime() {m_lastTransTime = time(NULL);}$/;"	f	class:CNetCtrlCall
+~CBaseState	BaseState.cpp	/^CBaseState::~CBaseState()$/;"	f	class:CBaseState
+~CNetCtrlCall	NetCtrlCall.cpp	/^CNetCtrlCall::~CNetCtrlCall(void)$/;"	f	class:CNetCtrlCall

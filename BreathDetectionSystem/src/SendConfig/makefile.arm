@@ -1,0 +1,39 @@
+include ../makefile.def.arm
+LIBS=libSendConfig
+#LIBSPATH=../../lib
+#TARGET=test $(LIBS).so $(LIBS).a
+TARGET=$(LIBS).so $(LIBS).a
+OBJS=$(patsubst %.cpp,%.o,$(wildcard *.cpp))
+
+#BASELIBS= ../tinyxmllib/libtinyxml.a ../CommBase/libCommBase.a $G/ServBase/libServBase.a 
+
+LIBSPATH=../../lib/
+all:$(OBJS) $(TARGET)
+
+%.o:%.cpp include/%.h 
+	$(CC) $< $(CCFLAGS) -o $@ -I./include -I../tinyxmllib/include
+
+test.o:test.cpp
+	$(CC) $< $(CCFLAGS) -o $@ -I./include -I../tinyxmllib/include
+
+#test:test.o SendConfig.o ../CommBase/SockStream.o $(ACE_ROOT)/ace/libACE.a ../ServBase/Tools.o ../tinyxmllib/libtinyxml.a
+test:test.o ../CommBase/SockStream.o $(ACE_ROOT)/ace/libACE.a ../ServBase/Tools.o SendConfig.o ../tinyxmllib/libtinyxml.a
+	#$(CC) $^ $(CFLAGS) -o $@
+	$(CC) $^ -o $@ $(CFLAGS)
+
+$(LIBS).so:SendConfig.o
+	arm-linux-androideabi-gcc -Wall -shared $^ -o $(LIBS).so
+	#arm-linux-androideabi-gcc -Wall -mlittle-endian -shared $^ -o $(LIBS).so
+	cp -dpR $(LIBS).so $(LIBSPATH)
+#       mv $(LIBS).so ../testClient2/
+
+#$(LIBS).a:SendConfig.o $(BASELIBS)
+$(LIBS).a:SendConfig.o 
+	arm-linux-androideabi-ar r $@ $^
+	#mv $(LIBS).a $(LIBSPATH)
+
+run:all
+	./$(TARGET)
+
+clean:
+	$(RM) $(OBJS) $(TARGET) $(BASESERVER)

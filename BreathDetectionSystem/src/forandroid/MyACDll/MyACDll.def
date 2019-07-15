@@ -1,0 +1,7 @@
+LIBRARY	MyACDll
+
+EXPORTS
+	ACModuleInitialize                    @1 PRIVATE
+	ACModuleUnInitialize                  @2 PRIVATE
+	CreateACObject                  @3 PRIVATE                       
+	DestroyACObject                 @4 PRIVATE

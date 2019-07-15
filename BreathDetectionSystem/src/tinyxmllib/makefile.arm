@@ -1,0 +1,27 @@
+include ../makefile.def.arm
+LIBS=libtinyxml
+TARGET=$(LIBS).so $(LIBS).a
+OBJS=$(patsubst %.cpp,%.o,$(wildcard *.cpp))
+all:$(OBJS) $(TARGET)
+
+%.o:%.cpp include/%.h
+	$(CC) $< $(CCFLAGS) -o $@
+
+tinyxmlerror.o:tinyxmlerror.cpp
+	$(CC) $< $(CCFLAGS) -o $@
+
+tinyxmlparser.o:tinyxmlparser.cpp
+	$(CC) $< $(CCFLAGS) -o $@
+
+libtinyxml.so:$(OBJS)
+	#$(CC) $^ $(CFLAGS) -shared -o $@
+	arm-linux-androideabi-gcc -Wall -shared $^ -o $(LIBS).so
+	cp -dpR $(LIBS).so ../../lib/
+
+libtinyxml.a:$(OBJS)
+	#ar r $@ $^
+	arm-linux-androideabi-ar r $@ $^
+
+clean:
+	$(RM) $(OBJS) $(TARGET)
+

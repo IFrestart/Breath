@@ -1,0 +1,25 @@
+<DBCommServ>
+	<Acceptor>
+		<IP>192.168.0.82</IP>
+		<Port>18555</Port>
+	</Acceptor>	
+
+	<EDUDBSvr>
+		<count>1</count>
+		<ipaddress0>180.153.155.7</ipaddress0>
+		<port0>3306</port0>
+		<user0>mmtsimple</user0>
+		<password0>123456</password0>
+		<dbname0>breath_db</dbname0>
+	</EDUDBSvr>	
+	
+	<SelfInfo>
+		<ServerType>32</ServerType>
+		<ServerIndex>1</ServerIndex>
+	</SelfInfo>
+
+	<Trace>
+		<MsgTrace>127</MsgTrace>
+		<MsgMod>31</MsgMod>
+	</Trace>	
+</DBCommServ>

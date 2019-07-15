@@ -1,0 +1,65 @@
+
+		<!--                   Notice     !!!!!!                    -->
+
+<!-- fields of "IsRsp"  means  this pdu need return or not return packet; 
+				1: IsRsp=""  or or IsRsp="false" or no this fields means not return packet(this is deafult); 
+				2: if "IsRsp" == true ,must have fields of "RspPduType" and "CheckType" 
+				   the "CheckType" is check data method ; this have two methods, offset or len;
+				   when method offset, must have fields of "Offset" and "Type" and "CheckValue" ;
+						check by fields of "Type" and "CheckValue" value;
+						"Offset" is address of check's data;
+						"Type" is type of check's data;
+						"CheckValue" is check's data value;
+				   when method len, must have fields "Len"; means need return data length;
+-->
+
+<!-- fields of "Loop" means this pdu need send counts ;
+				   when no this fields means send counts = 1 (this is deafult);
+-->
+
+<!-- fields of "DataType" value have 5 method to choice ;byte or short or long or string or void;
+	 when value is byte or short or long,Data value is 0xaa or xxxx or xxxx~yyyy;xxxx~yyyy means betwen xxxx to yyyy rands data,
+	 when value is string ,Data value is  ccccccc or @cc;  ccccccc means const string ; @cc means length is cc rands string data;
+	 when value is void ,Data value is  data length 
+-->
+
+<?xml version="1.0"?>
+<PduConfig>
+<Host Ip="192.168.1.50" Port="34567" >
+
+	<!-- examp of need return packet; check method by offset -->
+<pdu PduType="1000" PduName="report selfinfo" Loops="2" IsRsp="true" RspPduType="101" CheckType="offset" Offset="10" Type="short" CheckValue="80" >
+<param DataType="byte" Data="5" ></param>
+<param DataType="short" Data="18" ></param>
+<param DataType="long" Data="0x19" ></param>
+<param DataType="string" Data="hellostring" ></param>
+<param DataType="void" Data="100" ></param>
+</pdu>
+
+	<!-- examp of need return packet; check method by len -->
+<pdu PduType="1001" PduName="join_sesion" Loops="2" IsRsp="true" RspPduType="102" CheckType="len" Len="2">
+<param DataType="byte" Data="5" ></param>
+<param DataType="short" Data="18~50" ></param>
+<param DataType="long" Data="0xaf" ></param>
+<param DataType="string" Data="20" ></param>
+<param DataType="void" Data="100" ></param>
+</pdu>
+
+<pdu PduType="1003" PduName="trans data " >
+<param DataType="byte" Data="3~5" ></param>
+<param DataType="short" Data="18" ></param>
+<param DataType="long" Data="19" ></param>
+<param DataType="string" Data="@12" ></param>
+<param DataType="void" Data="100" ></param>
+</pdu>
+
+<pdu PduType="1002" PduName="leave sesion" Loops="" IsRsp="false" >
+<param DataType="byte" Data="3~5" ></param>
+<param DataType="short" Data="18" ></param>
+<param DataType="long" Data="0xff" ></param>
+<param DataType="string" Data="@12" ></param>
+<param DataType="void" Data="100" ></param>
+</pdu>
+
+</Host>
+</PduConfig>

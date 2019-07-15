@@ -1,0 +1,33 @@
+include makefile.def.arm
+
+DIRS =	\
+	socks5	\
+	jrtplib-2.7	\
+	tinyxmllib	\
+	\
+	CommBase	\
+	ServBase	\
+	SendConfig	
+
+all:
+	for i in $(DIRS) ; do \
+		if [ -d $$i ]; then	\
+			(cd $$i; make -f makefile.arm) ;	\
+		else	\
+			echo "----------------------------------------" ;	\
+			echo "$$i is not a directory..." ;	\
+			echo "----------------------------------------" ;	\
+		fi	\
+	done
+
+clean:
+	for i in $(DIRS) ; do \
+		if [ -d $$i ]; then	\
+			(cd $$i; make clean) ;	\
+		else	\
+			echo "----------------------------------------" ;	\
+			echo "$$i is not a directory..." ;	\
+			echo "----------------------------------------" ;	\
+		fi	\
+	done
+

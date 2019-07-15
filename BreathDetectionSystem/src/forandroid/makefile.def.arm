@@ -1,0 +1,73 @@
+G=..
+
+#CC=g++
+CC=arm-linux-androideabi-g++
+
+#ADDONSOBJS=$(patsubst %.cpp,%.o,$(wildcard $G/CommBase/*.cpp))	\
+#			$(patsubst %.cpp,%.o,$(wildcard $G/ServBase/*.cpp))	\
+#			$G/SendConfig/SendConfig.o
+
+ADDONSOBJS=$G/CommBase/libCommBase.a    \
+                        $G/ServBase/libServBase.a       \
+                        $G/SendConfig/libSendConfig.a   \
+			$G/tinyxmllib/libtinyxml.a	\
+			$G/jrtplib-2.7/libjrtp.a	\
+			$G/socks5/libsocks5.a
+
+ifdef WEBCON_HAS_FILELOG
+	ADDONSFLAGS+=-DWEBCON_HAS_FILELOG
+else
+ifdef WEBCON_HAS_SYSLOG
+	ADDONSFLAGS+=-DWEBCON_HAS_SYSLOG
+else
+ifdef WEBCON_HAS_STDLOG
+	ADDONSFLAGS+=-DWEBCON_HAS_STDLOG
+endif
+endif
+endif
+
+ifdef WEBCON_HAS_PRINT_DEBUG
+	ADDONSFLAGS+=-DWEBCON_HAS_PRINT_DEBUG
+endif
+
+ifdef WEBCON_HAS_SAFEDOG
+	ADDONSFLAGS+=-DWEBCON_HAS_SAFEDOG 
+endif
+
+ifdef WEBCON_HAS_DEMODOG
+	ADDONSFLAGS+=-DWEBCON_HAS_DEMODOG
+endif
+
+ifdef OUR_DEMO_VER
+	ADDONSFLAGS+=-DOUR_DEMO_VER
+endif
+
+ADDONSFLAGS+=-D__LINUX__
+#ADDONSFLAGS+=-D__TXT_MODE__
+
+#FLAGS=-W -mlittle-endian -g
+
+FLAGS=-W -g	\
+	-I./include	\
+	-I$G/CommBase/include	\
+	-I$G/ServBase/include	\
+	-I$G/NetCtrlDll/include	\
+	-I$G/FCNetACLib/include	\
+	-I$G/SendConfig/include	\
+	-I$G/jrtplib-2.7	\
+	-I$G/tinyxmllib/include	\
+	-I$G/CreateKey	\
+	-I$(ACE_ROOT)	\
+	\
+	-L$G/jrtplib-2.7	\
+	-L$(ACE_ROOT)/ace	\
+	$(ADDONSFLAGS)		\
+	-L../../lib
+
+CCFLAGS=$(FLAGS) -c
+#CFLAGS=$(FLAGS) -lACE -lcrypt
+#CFLAGS=$(FLAGS) -lpthread -ldl
+CFLAGS=$(FLAGS)
+RM=rm -f core.* *.log
+
+BASESERVOBJS=$(ADDONSOBJS)

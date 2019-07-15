@@ -1,0 +1,186 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.6	//
+ACModuleInitialize	MyACDll.cpp	/^void WINAPI ACModuleInitialize()$/;"	f
+ACModuleUnInitialize	MyACDll.cpp	/^void WINAPI ACModuleUnInitialize()$/;"	f
+Accept	ACSocket.cpp	/^SOCKET CACSocket::Accept(char* lpRemoteHost, USHORT* lpRemotePort)$/;"	f	class:CACSocket
+AddNewSession	ACTCPSessionManager.cpp	/^int CACTCPSessionManager::AddNewSession(SOCKET hSocket)$/;"	f	class:CACTCPSessionManager
+AddrToStr	ACSocket.cpp	/^void CACSocket::AddrToStr(ULONG lIpAddr, char* lpIpAddr)$/;"	f	class:CACSocket
+Attach	ACSocket.cpp	/^void CACSocket::Attach(SOCKET hSocket)$/;"	f	class:CACSocket
+AttachSocket	ACBaseSession.cpp	/^void CACBaseSession::AttachSocket(SOCKET hSocket)$/;"	f	class:CACBaseSession
+BeginWork	ACCommMainObject.cpp	/^int CACMainObject::BeginWork(LPCTSTR lpLocalHost, USHORT nLocalPort, $/;"	f	class:CACMainObject
+BeginWork	ACCommMainObject.cpp	/^int CACMainObject::BeginWork(LPCTSTR lpLocalHost, \/\/本地IP(不能为NULL)$/;"	f	class:CACMainObject
+BeginWork	ACTCPClientProc.cpp	/^int CACTCPClientProc::BeginWork(LPCTSTR lpLocalHost, USHORT nLocalPort, $/;"	f	class:CACTCPClientProc
+BeginWork	ACTCPClientProc.cpp	/^int CACTCPClientProc::BeginWork(LPCTSTR lpLocalHost, USHORT nLocalPort,$/;"	f	class:CACTCPClientProc
+BeginWork	ACTCPMainProcClass.cpp	/^int CACTCPMainProc::BeginWork(LPCTSTR lpLocalHost, USHORT nLocalPort, $/;"	f	class:CACTCPMainProc
+BeginWork	ACUDPMainProcClass.cpp	/^int CACUDPMainProc::BeginWork(LPCTSTR lpLocalHost, USHORT nLocalPort, $/;"	f	class:CACUDPMainProc
+BeginWork	ACUDPMainProcClass.cpp	/^int CACUDPMainProc::BeginWork(LPCTSTR lpLocalHost, USHORT nLocalPort,$/;"	f	class:CACUDPMainProc
+BeginWorkHttp	ACCommMainObject.cpp	/^int CACMainObject::BeginWorkHttp(LPCTSTR lpLocalHost, \/\/本地IP(不能为NULL)$/;"	f	class:CACMainObject
+BeginWorkHttp	ACTCPClientProc.cpp	/^int CACTCPClientProc::BeginWorkHttp(LPCTSTR lpLocalHost, USHORT nLocalPort, $/;"	f	class:CACTCPClientProc
+Bind	ACSocket.cpp	/^int CACSocket::Bind(LPCTSTR lpLocalHost, USHORT nLocalPort)$/;"	f	class:CACSocket
+Bind	CommFunction.cpp	/^int CCommFunction::Bind(SOCKS5_SOCKET sock, const char * lpLocalHost, $/;"	f	class:CCommFunction
+Bind	CommFunction.cpp	/^int CCommFunction::Bind(SOCKS5_SOCKET sock, unsigned long wLocalHost, $/;"	f	class:CCommFunction
+BuildHttpHead	ACTCPClientProc.cpp	/^void CACTCPClientProc::BuildHttpHead(DWORD dwDataSize, BYTE* lpHeadBuf)$/;"	f	class:CACTCPClientProc
+BuildSock5Head	ACUDPSession.cpp	/^int CACUDPSession::BuildSock5Head(LPCTSTR lpRemoteHost, USHORT nRemotePort, $/;"	f	class:CACUDPSession
+BuildUdpSocket5Head	UdpSocks5.cpp	/^int CUdpSocks5::BuildUdpSocket5Head(char * outbuf,unsigned long wRemoteHost,USHORT nRemotePort)$/;"	f	class:CUdpSocks5
+CACBaseMainProc	ACBaseMainProcClass.cpp	/^CACBaseMainProc::CACBaseMainProc(void)$/;"	f	class:CACBaseMainProc
+CACBaseSession	ACBaseSession.cpp	/^CACBaseSession::CACBaseSession()$/;"	f	class:CACBaseSession
+CACMainObject	ACCommMainObject.cpp	/^CACMainObject::CACMainObject(void)$/;"	f	class:CACMainObject
+CACSocket	ACSocket.cpp	/^CACSocket::CACSocket(void)$/;"	f	class:CACSocket
+CACTCPClientProc	ACTCPClientProc.cpp	/^CACTCPClientProc::CACTCPClientProc(void)$/;"	f	class:CACTCPClientProc
+CACTCPMainProc	ACTCPMainProcClass.cpp	/^CACTCPMainProc::CACTCPMainProc(void)$/;"	f	class:CACTCPMainProc
+CACTCPSession	ACTCPSession.cpp	/^CACTCPSession::CACTCPSession()$/;"	f	class:CACTCPSession
+CACTCPSessionManager	ACTCPSessionManager.cpp	/^CACTCPSessionManager::CACTCPSessionManager(void)$/;"	f	class:CACTCPSessionManager
+CACUDPMainProc	ACUDPMainProcClass.cpp	/^CACUDPMainProc::CACUDPMainProc(void)$/;"	f	class:CACUDPMainProc
+CACUDPSession	ACUDPSession.cpp	/^CACUDPSession::CACUDPSession(void)$/;"	f	class:CACUDPSession
+CHttpSocks5	HttpSocks5.cpp	/^CHttpSocks5::CHttpSocks5()$/;"	f	class:CHttpSocks5
+CUdpSocks5	UdpSocks5.cpp	/^CUdpSocks5::CUdpSocks5(void)$/;"	f	class:CUdpSocks5
+Close	ACSocket.cpp	/^void CACSocket::Close(void)$/;"	f	class:CACSocket
+Close	HttpSocks5.cpp	/^void CHttpSocks5::Close()$/;"	f	class:CHttpSocks5
+Close	UdpSocks5.cpp	/^void CUdpSocks5::Close(void)$/;"	f	class:CUdpSocks5
+CloseConnect	ACBaseSession.cpp	/^void CACBaseSession::CloseConnect()$/;"	f	class:CACBaseSession
+CloseConnection	ACCommMainObject.cpp	/^void CACMainObject::CloseConnection(SOCKET hSocket)$/;"	f	class:CACMainObject
+CloseConnection	ACTCPClientProc.cpp	/^int CACTCPClientProc::CloseConnection(SOCKET hSocket)$/;"	f	class:CACTCPClientProc
+CloseConnection	ACTCPMainProcClass.cpp	/^int CACTCPMainProc::CloseConnection(SOCKET hSocket)$/;"	f	class:CACTCPMainProc
+CloseConnection	ACUDPMainProcClass.cpp	/^int CACUDPMainProc::CloseConnection(SOCKET hSocket)$/;"	f	class:CACUDPMainProc
+CloseSessionConnect	ACTCPSession.cpp	/^void CACTCPSession::CloseSessionConnect()$/;"	f	class:CACTCPSession
+Connect	ACSocket.cpp	/^int CACSocket::Connect(LPCTSTR pRemoteHost, USHORT nRemotePort)$/;"	f	class:CACSocket
+ConnectByHttp	ACTCPClientProc.cpp	/^int CACTCPClientProc::ConnectByHttp(LPCTSTR lpDestHost, USHORT nDestPort, $/;"	f	class:CACTCPClientProc
+ConnectBySock5	ACTCPClientProc.cpp	/^int CACTCPClientProc::ConnectBySock5(LPCTSTR lpDestHost, USHORT nDestPort, $/;"	f	class:CACTCPClientProc
+ConnectHttpProxyServer	HttpSocks5.cpp	/^SOCKS5_SOCKET CHttpSocks5::ConnectHttpProxyServer(const char* pDestHost,  \/\/目标服务器IP地址 $/;"	f	class:CHttpSocks5
+ConnectToProxy	ACUDPSession.cpp	/^int CACUDPSession::ConnectToProxy(LPCTSTR lpLocalHost, USHORT nLocalPort, $/;"	f	class:CACUDPSession
+ConnectUdpProxyServer	UdpSocks5.cpp	/^SOCKS5_SOCKET CUdpSocks5::ConnectUdpProxyServer(LPCTSTR lpLocalHost, $/;"	f	class:CUdpSocks5
+ConnectUdpProxyServer	UdpSocks5.cpp	/^SOCKS5_SOCKET CUdpSocks5::ConnectUdpProxyServer(ULONG wLocalHost, USHORT nLocalPort,	$/;"	f	class:CUdpSocks5
+ConsultProcess	ACTCPClientProc.cpp	/^int CACTCPClientProc::ConsultProcess(const BYTE* lpSendBuf, DWORD dwSendLen, $/;"	f	class:CACTCPClientProc
+ConsultProcess	ACUDPSession.cpp	/^int CACUDPSession::ConsultProcess(const BYTE* lpSendBuf, DWORD dwSendLen, $/;"	f	class:CACUDPSession
+ConsultProcess	CommFunction.cpp	/^int CCommFunction::ConsultProcess(SOCKS5_SOCKET sock, const char* pSendBuf, $/;"	f	class:CCommFunction
+Create	ACSocket.cpp	/^SOCKET CACSocket::Create(short nType, LPCTSTR lpLocalHost, USHORT nLocalPort,BOOL bClientFlag)$/;"	f	class:CACSocket
+Create	HttpSocks5.cpp	/^SOCKS5_SOCKET CHttpSocks5::Create(const char * pLocalHost,	USHORT nLocalPort,$/;"	f	class:CHttpSocks5
+Create	HttpSocks5.cpp	/^SOCKS5_SOCKET CHttpSocks5::Create(unsigned long wLocalHost,	USHORT nLocalPort,$/;"	f	class:CHttpSocks5
+Create	UdpSocks5.cpp	/^SOCKS5_SOCKET CUdpSocks5:: Create(ULONG wLocalHost,	USHORT nLocalPort,$/;"	f	class:CUdpSocks5
+Create	UdpSocks5.cpp	/^SOCKS5_SOCKET CUdpSocks5::Create(LPCTSTR pLocalHost, USHORT nLocalPort,				$/;"	f	class:CUdpSocks5
+CreateACObject	MyACDll.cpp	/^IACMainObject*  CreateACObject()$/;"	f
+CreateACObject	MyACDll.cpp	/^IACMainObject* WINAPI CreateACObject()$/;"	f
+CreateMulPoint	ACSocket.cpp	/^SOCKET CACSocket::CreateMulPoint(short nType, LPCTSTR lpRemoteHost, USHORT nRemotePort,$/;"	f	class:CACSocket
+DelThreadIndex	MyACDll.cpp	/^void DelThreadIndex(HANDLE hThread)$/;"	f
+DestroyACObject	MyACDll.cpp	/^int  DestroyACObject(IACMainObject* pACMainObject)$/;"	f
+DestroyACObject	MyACDll.cpp	/^int WINAPI DestroyACObject(IACMainObject* pACMainObject)$/;"	f
+DllMain	MyACDll.cpp	/^BOOL APIENTRY DllMain( HANDLE hModule, $/;"	f
+GetActiveSession	ACTCPSessionManager.cpp	/^CACTCPSession * CACTCPSessionManager::GetActiveSession(int nTimeOut)$/;"	f	class:CACTCPSessionManager
+GetBestSessionMgrIndex	ACTCPMainProcClass.cpp	/^int CACTCPMainProc::GetBestSessionMgrIndex(void)$/;"	f	class:CACTCPMainProc
+GetConnect	ACBaseSession.cpp	/^CACSocket* CACBaseSession::GetConnect()$/;"	f	class:CACBaseSession
+GetCurrentStopFlag	ACTCPClientProc.cpp	/^long CACTCPClientProc::GetCurrentStopFlag()$/;"	f	class:CACTCPClientProc
+GetCurrentStopFlag	ACUDPSession.cpp	/^long CACUDPSession::GetCurrentStopFlag()$/;"	f	class:CACUDPSession
+GetDataLength	ACSocket.cpp	/^int CACSocket::GetDataLength(void)$/;"	f	class:CACSocket
+GetDateSize	ACTCPSession.cpp	/^int CACTCPSession::GetDateSize() \/\/add by zjj 2009-5-25$/;"	f	class:CACTCPSession
+GetField	ACSocket.cpp	/^int	CACSocket::GetField(const char* szBuf,const char* szSession,char *szValue,int nMaxLength)$/;"	f	class:CACSocket
+GetHeadData	ACTCPSession.cpp	/^const LPBYTE CACTCPSession::GetHeadData(void) const$/;"	f	class:CACTCPSession
+GetHttpHeadLength	ACTCPClientProc.cpp	/^DWORD CACTCPClientProc::GetHttpHeadLength(void)$/;"	f	class:CACTCPClientProc
+GetPackID	ACTCPSession.cpp	/^short CACTCPSession::GetPackID(void)$/;"	f	class:CACTCPSession
+GetPayLoadData	ACTCPSession.cpp	/^const LPBYTE CACTCPSession::GetPayLoadData(void) const$/;"	f	class:CACTCPSession
+GetPayLoadSize	ACTCPSession.cpp	/^DWORD CACTCPSession::GetPayLoadSize(void)$/;"	f	class:CACTCPSession
+GetPduType	ACTCPSession.cpp	/^USHORT CACTCPSession::GetPduType()$/;"	f	class:CACTCPSession
+GetPeerName	ACSocket.cpp	/^int CACSocket::GetPeerName(char* lpRemoteHost, USHORT* lpRemotePort)$/;"	f	class:CACSocket
+GetRDataBytes	ACTCPSession.cpp	/^DWORD CACTCPSession::GetRDataBytes(void)$/;"	f	class:CACTCPSession
+GetSessionByFD	ACTCPSessionManager.cpp	/^CACTCPSession * CACTCPSessionManager::GetSessionByFD(SOCKET hSocket)$/;"	f	class:CACTCPSessionManager
+GetSessionCount	ACTCPSessionManager.cpp	/^int CACTCPSessionManager::GetSessionCount(void)$/;"	f	class:CACTCPSessionManager
+GetSockName	ACSocket.cpp	/^int CACSocket::GetSockName(SOCKET hSocket, char* lpLocalHost, USHORT* lpLocalPort, $/;"	f	class:CACSocket
+GetSocket	ACSocket.cpp	/^SOCKET CACSocket::GetSocket(void)$/;"	f	class:CACSocket
+GetSocket	HttpSocks5.cpp	/^SOCKS5_SOCKET CHttpSocks5::GetSocket()$/;"	f	class:CHttpSocks5
+GetSocket	UdpSocks5.cpp	/^SOCKS5_SOCKET CUdpSocks5::GetSocket(void)$/;"	f	class:CUdpSocks5
+HttpSessionMainLoop	ACTCPClientProc.cpp	/^int CACTCPClientProc::HttpSessionMainLoop(void)$/;"	f	class:CACTCPClientProc
+InitHttp	ACCommMainObject.cpp	/^void CACMainObject::InitHttp(IACDataCallBack * lpDataCallBack, IACPackHead* lpHeadProc)$/;"	f	class:CACMainObject
+InitSessionMgr	ACTCPSessionManager.cpp	/^void CACTCPSessionManager::InitSessionMgr(IACDataCallBack* lpDataCallBack,$/;"	f	class:CACTCPSessionManager
+Initialize	ACBaseMainProcClass.cpp	/^void CACBaseMainProc::Initialize(short nCommType, short nThreadNum, $/;"	f	class:CACBaseMainProc
+Initialize	ACCommMainObject.cpp	/^void CACMainObject::Initialize(short nCommType, short nProtocolType, short nThreadNum, $/;"	f	class:CACMainObject
+Initialize	ACTCPClientProc.cpp	/^void CACTCPClientProc::Initialize(short nCommType, short nThreadNum, short nMaxConn,$/;"	f	class:CACTCPClientProc
+Initialize	ACTCPMainProcClass.cpp	/^void CACTCPMainProc::Initialize(short nCommType, short nThreadNum, short nMaxConn, $/;"	f	class:CACTCPMainProc
+Initialize	ACUDPMainProcClass.cpp	/^void CACUDPMainProc::Initialize(short nCommType, short nThreadNum, short nMaxConn, $/;"	f	class:CACUDPMainProc
+InitializeMulSocket	ACBaseSession.cpp	/^int CACBaseSession::InitializeMulSocket(short nProType,LPCTSTR lpRemoteHost,USHORT nRemotePort,$/;"	f	class:CACBaseSession
+InitializeSession	ACUDPSession.cpp	/^int CACUDPSession::InitializeSession(IACDataCallBack* lpDataCallBack, $/;"	f	class:CACUDPSession
+InitializeSession	ACUDPSession.cpp	/^int CACUDPSession::InitializeSession(IACDataCallBack* lpDataCallBack, IACPackHead* lpHeadProc, LPCTSTR lpLocalHost,$/;"	f	class:CACUDPSession
+InitializeSession	ACUDPSession.cpp	/^int CACUDPSession::InitializeSession(IACDataCallBack* lpDataCallBack,$/;"	f	class:CACUDPSession
+InitializeSocket	ACBaseSession.cpp	/^int CACBaseSession::InitializeSocket(short nProType, $/;"	f	class:CACBaseSession
+IsHeadSegment	ACTCPSession.cpp	/^BOOL CACTCPSession::IsHeadSegment()$/;"	f	class:CACTCPSession
+IsTerminated	ACBaseSession.cpp	/^BOOL CACBaseSession::IsTerminated()$/;"	f	class:CACBaseSession
+LIBS	makefile	/^LIBS=libMyAC$/;"	m
+LIBSPATH	makefile	/^LIBSPATH=..\/..\/lib$/;"	m
+LToStrIp	CommFunction.cpp	/^int CCommFunction::LToStrIp(unsigned long lIp,char *StrIp)$/;"	f	class:CCommFunction
+Listen	ACSocket.cpp	/^int CACSocket::Listen(int nBackLog)$/;"	f	class:CACSocket
+ListenThreadHelper	ACTCPMainProcClass.cpp	/^DWORD WINAPI CACTCPMainProc::ListenThreadHelper(LPVOID lpParameter)$/;"	f	class:CACTCPMainProc
+OBJS	makefile	/^OBJS=$(patsubst %.cpp,%.o,$(wildcard *.cpp))$/;"	m
+ParsePackageData	ACTCPSessionManager.cpp	/^int CACTCPSessionManager::ParsePackageData(CACTCPSession * pACTCPSession,$/;"	f	class:CACTCPSessionManager
+ReadPkgData	ACTCPSession.cpp	/^int CACTCPSession::ReadPkgData(void)$/;"	f	class:CACTCPSession
+ReadPkgHead	ACTCPSession.cpp	/^int CACTCPSession::ReadPkgHead(DWORD dwHeadSize)$/;"	f	class:CACTCPSession
+Receive	ACSocket.cpp	/^int CACSocket::Receive(char* lpBuf, DWORD dwSize)$/;"	f	class:CACSocket
+Receive	HttpSocks5.cpp	/^int CHttpSocks5::Receive(char* lpBuf, unsigned long wSize,int flags)$/;"	f	class:CHttpSocks5
+ReceiveFrom	ACSocket.cpp	/^int CACSocket::ReceiveFrom(char* lpBuf, DWORD dwSize, char* pRemoteHost,$/;"	f	class:CACSocket
+ReceiveFrom	UdpSocks5.cpp	/^int CUdpSocks5::ReceiveFrom(char* lpBuf, unsigned long wSize, unsigned long *pRemoteHost,$/;"	f	class:CUdpSocks5
+ReceiveHttp	ACSocket.cpp	/^int CACSocket::ReceiveHttp(char *lpBuf,int &nLength)$/;"	f	class:CACSocket
+RecvFromProxy	ACUDPSession.cpp	/^int CACUDPSession::RecvFromProxy(BYTE* lpBuf, DWORD dwSize, $/;"	f	class:CACUDPSession
+RecvThreadHelper	ACTCPClientProc.cpp	/^DWORD WINAPI CACTCPClientProc::RecvThreadHelper(LPVOID lpParameter)$/;"	f	class:CACTCPClientProc
+RecvThreadHelper	ACTCPSessionManager.cpp	/^DWORD WINAPI CACTCPSessionManager::RecvThreadHelper(LPVOID lpParameter)$/;"	f	class:CACTCPSessionManager
+RecvThreadHelper	ACUDPSession.cpp	/^DWORD WINAPI CACUDPSession::RecvThreadHelper(LPVOID lpParameter)$/;"	f	class:CACUDPSession
+RecvWait	CommFunction.cpp	/^int CCommFunction::RecvWait(SOCKS5_SOCKET sock, \/\/接收数据的套接字$/;"	f	class:CCommFunction
+RemoveSession	ACTCPSessionManager.cpp	/^void CACTCPSessionManager::RemoveSession(SOCKET hSocket)$/;"	f	class:CACTCPSessionManager
+ResetRecvBufData	ACTCPSession.cpp	/^int CACTCPSession::ResetRecvBufData(BOOL bHeadFlag)$/;"	f	class:CACTCPSession
+Select	ACSocket.cpp	/^int CACSocket::Select(int nMaxSocket, fd_set* pReadFDs, unsigned int nTimeOut, $/;"	f	class:CACSocket
+Send	ACSocket.cpp	/^int CACSocket::Send(const char* lpBuf, DWORD dwSize)$/;"	f	class:CACSocket
+Send	HttpSocks5.cpp	/^int CHttpSocks5::Send(const char * lpBuf, unsigned long wSize,int flags)$/;"	f	class:CHttpSocks5
+SendByProxy	ACUDPSession.cpp	/^int CACUDPSession::SendByProxy(const BYTE* lpBuf, DWORD dwSize, LPCTSTR lpRemoteHost, $/;"	f	class:CACUDPSession
+SendCommData	ACUDPSession.cpp	/^int CACUDPSession::SendCommData(WORD wPduType, const BYTE* lpBuf, $/;"	f	class:CACUDPSession
+SendCommTCPData	ACCommMainObject.cpp	/^int CACMainObject::SendCommTCPData(WORD wPduType, const BYTE* lpData, $/;"	f	class:CACMainObject
+SendCommTCPData	ACTCPClientProc.cpp	/^int CACTCPClientProc::SendCommTCPData(WORD wPduType, const BYTE* lpBuf, $/;"	f	class:CACTCPClientProc
+SendCommTCPData	ACTCPMainProcClass.cpp	/^int CACTCPMainProc::SendCommTCPData(WORD wPduType, const BYTE* lpBuf, $/;"	f	class:CACTCPMainProc
+SendCommUDPData	ACCommMainObject.cpp	/^int CACMainObject::SendCommUDPData(WORD wPduType, const BYTE* lpData, $/;"	f	class:CACMainObject
+SendCommUDPData	ACUDPMainProcClass.cpp	/^int CACUDPMainProc::SendCommUDPData(WORD wPduType, const BYTE* lpBuf, $/;"	f	class:CACUDPMainProc
+SendTo	ACSocket.cpp	/^int CACSocket::SendTo(LPCTSTR lpBuf, DWORD dwSize, LPCTSTR pRemoteHost,$/;"	f	class:CACSocket
+Sendto	UdpSocks5.cpp	/^int CUdpSocks5::Sendto(const char * lpBuf, unsigned long wSize,  unsigned long  wRemoteHost,$/;"	f	class:CUdpSocks5
+SessionMainLoop	ACTCPClientProc.cpp	/^int CACTCPClientProc::SessionMainLoop(void)$/;"	f	class:CACTCPClientProc
+SessionMainLoop	ACUDPSession.cpp	/^int CACUDPSession::SessionMainLoop(void)$/;"	f	class:CACUDPSession
+SessionMgrMainLoop	ACTCPSessionManager.cpp	/^int CACTCPSessionManager::SessionMgrMainLoop(void)$/;"	f	class:CACTCPSessionManager
+SetHeadSegmentFlag	ACTCPSession.cpp	/^void CACTCPSession::SetHeadSegmentFlag(BOOL bFlag)$/;"	f	class:CACTCPSession
+SetHttpFlag	ACTCPClientProc.cpp	/^void CACTCPClientProc::SetHttpFlag(void)$/;"	f	class:CACTCPClientProc
+SetPackID	ACTCPSession.cpp	/^void CACTCPSession::SetPackID(short nPackID)$/;"	f	class:CACTCPSession
+SetPayLoadSize	ACTCPSession.cpp	/^void CACTCPSession::SetPayLoadSize(DWORD dwSize)$/;"	f	class:CACTCPSession
+SetPduType	ACTCPSession.cpp	/^void CACTCPSession::SetPduType(WORD wPduType)$/;"	f	class:CACTCPSession
+SetSocket	HttpSocks5.cpp	/^void CHttpSocks5::SetSocket(SOCKS5_SOCKET sock)$/;"	f	class:CHttpSocks5
+SetSocket	UdpSocks5.cpp	/^void CUdpSocks5::SetSocket(SOCKS5_SOCKET sock)$/;"	f	class:CUdpSocks5
+StartMainLoop	ACTCPSessionManager.cpp	/^int CACTCPSessionManager::StartMainLoop(void)$/;"	f	class:CACTCPSessionManager
+StartMainProc	ACTCPClientProc.cpp	/^int CACTCPClientProc::StartMainProc(void)$/;"	f	class:CACTCPClientProc
+StartSessionMainLoop	ACUDPSession.cpp	/^int CACUDPSession::StartSessionMainLoop(void)$/;"	f	class:CACUDPSession
+StopMainLoop	ACTCPSessionManager.cpp	/^void CACTCPSessionManager::StopMainLoop(void)$/;"	f	class:CACTCPSessionManager
+StopMainProc	ACTCPClientProc.cpp	/^int CACTCPClientProc::StopMainProc(void)$/;"	f	class:CACTCPClientProc
+StopMainProc	ACTCPMainProcClass.cpp	/^int CACTCPMainProc::StopMainProc(void)$/;"	f	class:CACTCPMainProc
+StopMainProc	ACUDPMainProcClass.cpp	/^int CACUDPMainProc::StopMainProc(void)$/;"	f	class:CACUDPMainProc
+StopSessionMainLoop	ACUDPSession.cpp	/^int CACUDPSession::StopSessionMainLoop(void)$/;"	f	class:CACUDPSession
+TCPServerListenProc	ACTCPMainProcClass.cpp	/^int CACTCPMainProc::TCPServerListenProc(void)$/;"	f	class:CACTCPMainProc
+TerminateSession	ACBaseSession.cpp	/^void CACBaseSession::TerminateSession()$/;"	f	class:CACBaseSession
+base64_table	ACTCPClientProc.cpp	/^const char *base64_table =$/;"	v
+g_pHeadPre	ACTCPClientProc.cpp	/^char* g_pHeadPre = "POST \/server\/default.jsp HTTP\/1.1\\r\\nHost: localhost\\r\\nContent-Length: ";$/;"	v
+make_base64_string	ACTCPClientProc.cpp	/^char* CACTCPClientProc::make_base64_string(const char *str)$/;"	f	class:CACTCPClientProc
+new	ACBaseMainProcClass.cpp	10;"	d	file:
+new	ACBaseSession.cpp	12;"	d	file:
+new	ACCommMainObject.cpp	15;"	d	file:
+new	ACSocket.cpp	22;"	d	file:
+new	ACTCPClientProc.cpp	14;"	d	file:
+new	ACTCPMainProcClass.cpp	21;"	d	file:
+new	ACTCPSession.cpp	17;"	d	file:
+new	ACTCPSessionManager.cpp	21;"	d	file:
+new	ACUDPMainProcClass.cpp	16;"	d	file:
+new	ACUDPSession.cpp	14;"	d	file:
+~CACBaseMainProc	ACBaseMainProcClass.cpp	/^CACBaseMainProc::~CACBaseMainProc(void)$/;"	f	class:CACBaseMainProc
+~CACBaseSession	ACBaseSession.cpp	/^CACBaseSession::~CACBaseSession()$/;"	f	class:CACBaseSession
+~CACMainObject	ACCommMainObject.cpp	/^CACMainObject::~CACMainObject(void)$/;"	f	class:CACMainObject
+~CACSocket	ACSocket.cpp	/^CACSocket::~CACSocket()$/;"	f	class:CACSocket
+~CACTCPClientProc	ACTCPClientProc.cpp	/^CACTCPClientProc::~CACTCPClientProc(void)$/;"	f	class:CACTCPClientProc
+~CACTCPMainProc	ACTCPMainProcClass.cpp	/^CACTCPMainProc::~CACTCPMainProc(void)$/;"	f	class:CACTCPMainProc
+~CACTCPSession	ACTCPSession.cpp	/^CACTCPSession::~CACTCPSession()$/;"	f	class:CACTCPSession
+~CACTCPSessionManager	ACTCPSessionManager.cpp	/^CACTCPSessionManager::~CACTCPSessionManager(void)$/;"	f	class:CACTCPSessionManager
+~CACUDPMainProc	ACUDPMainProcClass.cpp	/^CACUDPMainProc::~CACUDPMainProc(void)$/;"	f	class:CACUDPMainProc
+~CACUDPSession	ACUDPSession.cpp	/^CACUDPSession::~CACUDPSession(void)$/;"	f	class:CACUDPSession
+~CHttpSocks5	HttpSocks5.cpp	/^CHttpSocks5::~CHttpSocks5()$/;"	f	class:CHttpSocks5
+~CUdpSocks5	UdpSocks5.cpp	/^CUdpSocks5::~CUdpSocks5(void)$/;"	f	class:CUdpSocks5

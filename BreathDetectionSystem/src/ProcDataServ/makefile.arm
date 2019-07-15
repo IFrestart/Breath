@@ -1,0 +1,20 @@
+include ../makefile.def.arm
+
+TARGET=AuthCtrlServ
+OBJS=$(patsubst %.cpp,%.o,$(wildcard *.cpp))
+
+all:$(OBJS) $(TARGET)
+
+%.o:%.cpp include/%.h 
+	$(CC) $< $(CCFLAGS) -o $@
+
+$(TARGET):$(OBJS) $(ACE_ROOT)/ace/libACE.a $(BASESERVOBJS)
+	#$(CC) $^ $(CFLAGS) -o $@
+	$(CC) $^ -o $@ $(CFLAGS)
+
+run:all
+	./$(TARGET)
+
+clean:
+	$(RM) $(OBJS) $(TARGET)
+

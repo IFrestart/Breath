@@ -1,0 +1,26 @@
+include ../makefile.def.arm
+
+LIBS=libNetCtrl
+LIBSPATH=../../lib
+
+OBJS=$(patsubst %.cpp,%.o,$(wildcard *.cpp))
+
+all:$(OBJS) $(LIBS).so $(LIBS).a
+
+%.o:%.cpp ./include/%.h 
+	$(CC) $< $(CCFLAGS) -o $@
+
+#$(LIBS).so:$(OBJS) $(BASESERVOBJS)
+$(LIBS).so:$(OBJS)
+	arm-linux-androideabi-gcc -Wall -shared $^ -o $(LIBS).so
+	cp -dpR $(LIBS).so $(LIBSPATH)
+	#arm-linux-androideabi-gcc -Wall -mlittle-endian -shared $^ -o $(LIBS).so
+#	mv $(LIBS).so ../testClient2/
+
+$(LIBS).a:$(OBJS)
+	arm-linux-androideabi-ar r $@ $^
+	mv $(LIBS).a $(LIBSPATH)
+
+clean:
+	$(RM) $(OBJS)
+

@@ -1,0 +1,31 @@
+include ../../makefile.def.arm
+
+BASENAME=testClient2
+TARGET=$(PRE)$(BASENAME)$(EXT)
+#LIBOBJS=../../lib/libFCNetAC.a
+LIBOBJS=../../lib/libFCNetAC.a ../../lib/libNetCtrl.a $(ADDONSOBJS) $(ACE_ROOT)/ace/libACE.a
+MY_PATH=$(NDK_HOME)/sources/cxx-stl/gnu-libstdc++/4.4.3/libs/armeabi
+
+OBJS=$(patsubst %.cpp,%.o,$(wildcard *.cpp))
+#CFLAGS+= -lNetCtrl -lFCNetAC
+#CFLAGS+=-lFCNetAC
+#CFLAGS+=-lFCNetAC -L$(MY_PATH) -lgnustl_shared
+#CFLAGS+=-L$(MY_PATH) -lgnustl_shared
+all:$(OBJS) $(TARGET)
+
+%.o:%.cpp include/%.h 
+	$(CC) $< $(CCFLAGS) -o $@
+
+#$(TARGET):$(OBJS) $(LIBOBJS) $(BASESERVOBJS)
+#$(TARGET):$(OBJS) $(BASESERVOBJS)
+#$(TARGET):$(OBJS)
+$(TARGET):$(OBJS) $(LIBOBJS)
+	#$(CC) $^ $(CFLAGS) -o $@
+	$(CC) $^ -o $@ $(CFLAGS)
+
+run:all
+	./$(TARGET)
+
+clean:
+	$(RM) $(OBJS) $(BASENAME) $(TARGET)
+

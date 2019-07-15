@@ -1,0 +1,10 @@
+<ProcDataServer>
+	<DBCommServ>
+        <IP>192.168.100.25</IP>
+        <Port>8898</Port>
+	</DBCommServ>	
+
+	<ServerVersionInfo>
+                <VersionId>65536</VersionId>
+    </ServerVersionInfo>
+</ProcDataServer>

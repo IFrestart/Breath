@@ -1,0 +1,10 @@
+<ProcDataServer>
+	<CenterCtrlServ>
+		<IP>192.168.100.25</IP>
+		<Port>8898</Port>
+	</CenterCtrlServ>
+
+	<ServerVersionInfo>
+		<VersionId>65536</VersionId>
+	</ServerVersionInfo>
+</ProcDataServer>

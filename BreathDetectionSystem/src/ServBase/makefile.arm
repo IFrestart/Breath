@@ -1,0 +1,27 @@
+include ../makefile.def.arm
+LIBS=libServBase
+OBJS=$(patsubst %.cpp,%.o,$(wildcard *.cpp))
+
+#BASELIBS=../tinyxmllib/libtinyxml.a ../socks5/libsocks5.a ../jrtplib-2.7/libjrtp.a ../CommBase/libCommBase.a $(ACE_ROOT)/ace/libACE.a 
+LIBSPATH=../../lib/
+
+all:$(OBJS) $(LIBS).so $(LIBS).a
+
+%.o:%.cpp include/%.h 
+	$(CC)  $< $(CCFLAGS) -o $@
+
+Main.o:Main.cpp
+	$(CC)  $< $(CCFLAGS) -o $@
+
+$(LIBS).so:$(OBJS)
+	arm-linux-androideabi-gcc -Wall -shared $^ -o $(LIBS).so
+	#arm-linux-androideabi-gcc -Wall -mlittle-endian -shared $^ -o $(LIBS).so
+	cp -dpR $(LIBS).so $(LIBSPATH)
+
+#$(LIBS).a:$(OBJS) $(BASELIBS)
+$(LIBS).a:$(OBJS)
+	arm-linux-androideabi-ar r $@ $^
+	#mv $(LIBS).a $(LIBSPATH)
+clean:
+	$(RM) $(OBJS)
+

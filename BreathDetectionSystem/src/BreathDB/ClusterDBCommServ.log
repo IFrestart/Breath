@@ -1,0 +1,10 @@
+[2019-05-13 09:48:11 443]	 [DBCfg]   --  @--@   [timer] -- Mod=[31], Trace=[127]
+[2019-05-13 09:48:11 443]	 [DBCfg]   --  @===@  [var]   -- m_nMsgTrace=[127]
+[2019-05-13 09:48:11 443]	 [DBCfg]   --  @===@  [var]   -- m_nMsgMod=[31]
+[2019-05-13 09:48:11 443]	 [DBCfg]   --  @===@  [var]   -- m_iEDUDBSvrCount=[1]
+[2019-05-13 09:48:11 443]	 [DBCfg]   --  @===@  [var]   -- m_EDUDBSvrArray[0], szSvrIP=[192.168.1.81], shSvrPort=[3306], szUName=[mmtsimple], szPassword=[simple.dbcomm], szDBName=[breath_db]
+[2019-05-13 09:48:11 443]	 [EDUComm] --  @--@   [timer] -- Mod=[31], Trace=[127]
+[2019-05-13 09:48:11 443]	 [EDUMgr]  --  @--@   [timer] -- Mod=[31], Trace=[127]
+[2019-05-13 09:48:11 443]	 [CMyDB]   --  @--@   [timer] -- Mod=[31], Trace=[127]
+[2019-05-13 09:48:14 461]	 [EDUMgr]  --  @-@    [error] -- Connect to edu db failed! m_pDBIdx[0] Failed to connect to database: Error: Can't connect to MySQL server on '192.168.1.81' (113)
+[2019-05-13 09:48:14 461]	 [EDUComm] --  @-@    [error] -- m_pEDUDBMgr->ConnectToDB(0) failed

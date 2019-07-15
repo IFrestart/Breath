@@ -1,0 +1,25 @@
+安装数据库
+	1、tar zxvf install_mysql.tar.gz
+	2、cd install_mysql,运行install.sh,选择需要的选项。
+
+		1选项：安装数据库
+		2选项：在数据库中建库和建表
+		3选项：将数据库中选择需要的库进行备份，备份的数据的存放路劲会有显示
+		4选项：将备份的数据导入到数据库中
+	
+	3、默认初始系统管理员账号：admin，密码：123456
+
+注意事项：
+	
+	1、linux中防火墙是否关闭。iptables -L查看防火墙，如果防火墙没有关闭，执行iptables -F
+	
+	
+	2、安装数据库后的几个重要目录：
+		
+		MySQL默认的数据文件存储目录		/var/lib/mysql
+		MySQL的配置文件				/etc/my.cnf
+		mysql 运行命令目录			/usr/bin/mysql        
+		mysql运行相关lib库			/usr/lib/mysql         
+		Mysql相关文档				/usr/share/mysql 
+		mysql启动脚本				/etc/rc.d/init.d/mysql 
+
