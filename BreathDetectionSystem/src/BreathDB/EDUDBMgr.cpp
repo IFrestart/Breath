@@ -1,4 +1,4 @@
-/**
+ï»¿/**
  * Copyright (c) 2016, HangZhou Webcon Centeroration.
  * @file     EDUDBMgr.cpp
  * @author   shizc <shizc@webcon.com.cn>
@@ -76,7 +76,7 @@ void CEDUDBMgr::SetTraceType (int nMsgMod, int nMsgTrace)
 }
 
 /**
- * Á¬½Óµ½Êı¾İ¿â
+ * è¿æ¥åˆ°æ•°æ®åº“
  * @return Success, EDUDB_CONST_CONN_LOST: Failure
  */
 int CEDUDBMgr::ConnectToDB (int nIdx)
@@ -164,9 +164,9 @@ int CEDUDBMgr::CheckDBVersion(int nDBIndex)
 **/
 
 /**
- * Çå³ıÊı¾İ¿âÁ¬½Ó
- * @param nDBStatus EDUDB_ERR_DBCONN_LOST »òEDUDB_ERROR_DBCONN_OK»òEDUDB_ERROR_DBCONN_INIT
- * @return EDUDB_ERR_DBCONN_LOST »òEDUDB_ERROR_DBCONN_OK»òEDUDB_ERROR_DBCONN_INIT
+ * æ¸…é™¤æ•°æ®åº“è¿æ¥
+ * @param nDBStatus EDUDB_ERR_DBCONN_LOST æˆ–EDUDB_ERROR_DBCONN_OKæˆ–EDUDB_ERROR_DBCONN_INIT
+ * @return EDUDB_ERR_DBCONN_LOST æˆ–EDUDB_ERROR_DBCONN_OKæˆ–EDUDB_ERROR_DBCONN_INIT
  */
 int CEDUDBMgr::FreeAll (int nDBStatus)
 {
@@ -199,9 +199,9 @@ int CEDUDBMgr::FreeAll (int nDBStatus)
 }
 
 /**
- * ¼ì²éÊı¾İ¿âÁ¬½Ó
- * @param nDBIndexID Òª¼ì²éµÄÊı¾İ¿âÁ¬½ÓºÅ
- * @return Õı³£ EDUDB_ERR_DBCONN_OK ; ·ÇÕı³£EDUDB_ERR_DBCONN_LOST
+ * æ£€æŸ¥æ•°æ®åº“è¿æ¥
+ * @param nDBIndexID è¦æ£€æŸ¥çš„æ•°æ®åº“è¿æ¥å·
+ * @return æ­£å¸¸ EDUDB_ERR_DBCONN_OK ; éæ­£å¸¸EDUDB_ERR_DBCONN_LOST
  */
 int CEDUDBMgr::CheckConnection (int nDBIndex)
 {
@@ -286,18 +286,18 @@ int CEDUDBMgr::SetSleepTime(TimeXlh &stru,char *cxlh)
         getSleepStatInfo(SMstru, slArray);
         int sAsize = slArray.size();
 
-        int flagtime = 0;   //æ—¶é—´æ ‡è®°
-        int befortime = 0;  //å‰ä¸€ä¸ªæ—¶é—´   
-        int allSleepCount= 0;   //æ€»ç¡çœ è®¡æ•°   
+        int flagtime = 0;   //éƒå •æ£¿éå›ªî†‡
+        int befortime = 0;  //é“å¶„ç«´æ¶“î…æ¤‚é—‚?   
+        int allSleepCount= 0;   //é¬è¤æ½¯éªçŠºî…¸é?   
         int deepSleepCount = 0;
-        int bedCount= 0;        //åœ¨åºŠè®¡æ•°
-        int awakCount= 0;       //è§‰é†’è®¡æ•°
-        int leaveCount = 0;     //æ— äººè®¡æ•°
-        int awakleaveCount = 0; //å…¥ç¡å‰æ— äºº   
-        int NACount=0;         //è¿ç»­è§‰é†’è®¡æ•°
+        int bedCount= 0;        //é¦ã„¥ç°¥ç’â„ƒæšŸ
+        int awakCount= 0;       //ç‘™å¤å•‹ç’â„ƒæšŸ
+        int leaveCount = 0;     //éƒçŠ±æ±‰ç’â„ƒæšŸ
+        int awakleaveCount = 0; //éãƒ§æ½¯é“å¶†æ£¤æµœ?   
+        int NACount=0;         //æ©ç‚µç”»ç‘™å¤å•‹ç’â„ƒæšŸ
         int ahis = 0;
         int ahio = 0;
-        WORD statflag = 0;   //çŠ¶æ€æ ‡è¯†
+        WORD statflag = 0;   //é˜èˆµâ‚¬ä½¹çˆ£ç’‡?
         SMstru.dwDelayTime ==0;
         for(int j=0; j<sAsize; j++)
         {
@@ -321,7 +321,7 @@ int CEDUDBMgr::SetSleepTime(TimeXlh &stru,char *cxlh)
             if(statflag == 3)
             {
                 awakCount++;
-                //æŒç»­è¶…è¿‡5åˆ†é’Ÿï¼ˆNA> 5ï¼‰çš„è§‰é†’æ¬¡æ•°
+                //é¸ä½ºç”»ç“’å‘°ç¹ƒ5é’å—›æŒ“é”›åœ¢A> 5é”›å¤Œæ®‘ç‘™å¤å•‹å¨†â„ƒæšŸ
                 if(flagtime-befortime < 90)
                 {
                     NACount++;
@@ -380,7 +380,7 @@ int CEDUDBMgr::SetSleepTime(TimeXlh &stru,char *cxlh)
         insetSleepStat(SMstru);
 }
 
-/*¶¨Ê±Ö´ĞĞÈÎÎñ */
+/*å®šæ—¶æ‰§è¡Œä»»åŠ¡ */
 int CEDUDBMgr::DBTimerTasker ()
 {
     if(getMorningTime() == 0)
@@ -434,7 +434,7 @@ int CEDUDBMgr::getSETime(TimeXlh &stru, ShiMian &SMstru)
     char **row = NULL;
     int nAffectedRows = RowsInit;
 
-    //æ—¶é—´åç§»æ ¡å‡†å€¼
+    //éƒå •æ£¿é‹å¿•Ğ©éâ€³å™¯éŠ?
    int hournum = 14*60*60;
 
     int i = 0;
@@ -587,7 +587,7 @@ int CEDUDBMgr::getSETime(TimeXlh &stru, ShiMian &SMstru)
     return DB_ERR_SUCCESS;
 }
 
-//»ñÈ¡Ë¯ÃßĞÅÏ¢Êı¾İ
+//è·å–ç¡çœ ä¿¡æ¯æ•°æ®
 int CEDUDBMgr::getSleepStatInfo(ShiMian &stru, SleepArray &Array)
 {
     int nDBIndex = GetDBIndexID();
@@ -648,7 +648,7 @@ int CEDUDBMgr::getSleepStatInfo(ShiMian &stru, SleepArray &Array)
     return DB_ERR_SUCCESS;
 }
 
-//±£´æÈë¿â
+//ä¿å­˜å…¥åº“
 int CEDUDBMgr::insetSleepStat(ShiMian stru)
 {
     int nDBIndex = GetDBIndexID();
@@ -689,8 +689,8 @@ int CEDUDBMgr::insetSleepStat(ShiMian stru)
 }
 
 /*
- * »ñÈ¡Êı¾İ¿âID
- * @return  >=0	¿ÉÓÃµÄDBIndexID; EDUDB_ERR_DBCONN_LOST ËùÓĞÁ¬½ÓÒÑ¾­¶Ï¿ª; EDUDB_ERR_DBCONN_BUSY ËùÓĞÁ¬½Ó¶¼Ã¦Âµ£¨Ö¸Ã¿¸öÁ¬½Ó¶¼ÓĞEDUDB_CONST_LOCK_MAXCOUNT¸öÃüÁîµÈ´ı£©
+ * è·å–æ•°æ®åº“ID
+ * @return  >=0	å¯ç”¨çš„DBIndexID; EDUDB_ERR_DBCONN_LOST æ‰€æœ‰è¿æ¥å·²ç»æ–­å¼€; EDUDB_ERR_DBCONN_BUSY æ‰€æœ‰è¿æ¥éƒ½å¿™ç¢Œï¼ˆæŒ‡æ¯ä¸ªè¿æ¥éƒ½æœ‰EDUDB_CONST_LOCK_MAXCOUNTä¸ªå‘½ä»¤ç­‰å¾…ï¼‰
  */
 int CEDUDBMgr::GetDBIndexID (short shType)
 {
@@ -721,7 +721,7 @@ int CEDUDBMgr::GetDBIndexID (short shType)
     return nLockedMin;
 }
 
-//²é¿´open_idÊÇ·ñÓëÖÕ¶ËÒÑ°ó¶¨
+//æŸ¥çœ‹open_idæ˜¯å¦ä¸ç»ˆç«¯å·²ç»‘å®š
 int CEDUDBMgr::CheckBind(OpenidInfo stru)
 {
     int nDBIndex = GetDBIndexID();
@@ -769,7 +769,7 @@ int CEDUDBMgr::CheckBind(OpenidInfo stru)
     return result;
 }
 
-//»ñÈ¡openid°ó¶¨¿¨ºÅÁĞ±í
+//è·å–openidç»‘å®šå¡å·åˆ—è¡¨
 int CEDUDBMgr::GetBandZDList(OpenidInfo &stru, OpenidInfoArray &Array)
 {
     int nDBIndex = GetDBIndexID();
@@ -832,12 +832,12 @@ int CEDUDBMgr::GetBandZDList(OpenidInfo &stru, OpenidInfoArray &Array)
         //m_pDBTrace->TraceVarIn (" = [%s],  = [%s], \n",, );
     }
 
-    //Ö´ĞĞ³É¹¦
+    //æ‰§è¡ŒæˆåŠŸ
     m_pDBIdx[nDBIndex]->ThreadUnlock();
     return DB_ERR_SUCCESS;
 }
 
-//½â³ıopen_id°ó¶¨µÄÉè±¸
+//è§£é™¤open_idç»‘å®šçš„è®¾å¤‡
 int CEDUDBMgr::DelBind(OpenidInfo &stru)
 {
     int nDBIndex = GetDBIndexID();
@@ -884,11 +884,11 @@ int CEDUDBMgr::DelBind(OpenidInfo &stru)
         return DB_ERR_DBDATA_ERROR;
     }
 
-    //Ö´ĞĞ³É¹¦
+    //æ‰§è¡ŒæˆåŠŸ
     m_pDBIdx[nDBIndex]->ThreadUnlock();
     return DB_ERR_SUCCESS;
 }
-//°ó¶¨Éè±¸£¨Î¢ĞÅ¹«ÖÚºÅÓÃ£©
+//ç»‘å®šè®¾å¤‡ï¼ˆå¾®ä¿¡å…¬ä¼—å·ç”¨ï¼‰
 int CEDUDBMgr::BindBreath(OpenidInfo &stru)
 {
     int nDBIndex = GetDBIndexID();
@@ -944,13 +944,13 @@ int CEDUDBMgr::BindBreath(OpenidInfo &stru)
         return DB_ERR_DBDATA_ERROR;
     }
 
-    //Ö´ĞĞ³É¹¦
+    //æ‰§è¡ŒæˆåŠŸ
     m_pDBIdx[nDBIndex]->ThreadUnlock();
     return DB_ERR_SUCCESS;
 
 }
 
-//¼ì²âÖÕ¶ËÉè±¸ÊÇ·ñ´æÔÚ
+//æ£€æµ‹ç»ˆç«¯è®¾å¤‡æ˜¯å¦å­˜åœ¨
 int CEDUDBMgr::CheckZhongDuan(char *ZhDXlh)
 {
     int nDBIndex = GetDBIndexID();
@@ -996,7 +996,7 @@ int CEDUDBMgr::CheckZhongDuan(char *ZhDXlh)
     return result;
 }
 
-//ÖÕ¶ËÉè±¸Èë¿â
+//ç»ˆç«¯è®¾å¤‡å…¥åº“
 int CEDUDBMgr::AddTerminalInfo(ZhDInfo &stru)
 {
     int nDBIndex = GetDBIndexID();
@@ -1045,7 +1045,7 @@ int CEDUDBMgr::AddTerminalInfo(ZhDInfo &stru)
     m_pDBIdx[nDBIndex]->ThreadUnlock();
     return DB_ERR_SUCCESS;
 }
-//Ïú»ÙÖÕ¶ËÉè±¸
+//é”€æ¯ç»ˆç«¯è®¾å¤‡
 int CEDUDBMgr::DelTerminalInfo(ZhDInfo &stru)
 {
     int nDBIndex = GetDBIndexID();
@@ -1079,7 +1079,7 @@ int CEDUDBMgr::DelTerminalInfo(ZhDInfo &stru)
         return DB_ERR_DBDATA_ERROR;
     }
 
-    //Ö´ĞĞ³É¹¦
+    //æ‰§è¡ŒæˆåŠŸ
     m_pDBIdx[nDBIndex]->ThreadUnlock();
     return DB_ERR_SUCCESS;
 }
@@ -1103,7 +1103,7 @@ int CEDUDBMgr::GetTerminalList(PageList &List,FileDirArray &Array)
     char **row = NULL;
     int nAffectedRows = RowsInit;
 
-    //Í³¼Æµ±Ç°Ìõ¼şÏÂ±¨¾¯ĞÅÏ¢ÊıÁ¿
+    //ç»Ÿè®¡å½“å‰æ¡ä»¶ä¸‹æŠ¥è­¦ä¿¡æ¯æ•°é‡
     oss.str ("");
     oss << "select count(*) from T_TerminalInfo";
     nAffectedRows =m_pDBIdx[nDBIndex]->exec ((char *) (oss.str ().c_str ()));
@@ -1121,12 +1121,12 @@ int CEDUDBMgr::GetTerminalList(PageList &List,FileDirArray &Array)
         return DB_ERR_SUCCESS;
     }
 
-    //Í³¼Æ½á¹û
+    //ç»Ÿè®¡ç»“æœ
     row = m_pDBIdx[nDBIndex]->getRow ();
     WORD wCount = (WORD) atoi(row[0]);
 
     WORD wListNum = List.wListNum;
-    //¼ÆËãÒ³Êı
+    //è®¡ç®—é¡µæ•°
     WORD tmpCount = wCount % wListNum;
     List.wAllPageNum = wCount / wListNum;
     if(tmpCount > 0)
@@ -1134,7 +1134,7 @@ int CEDUDBMgr::GetTerminalList(PageList &List,FileDirArray &Array)
         ++List.wAllPageNum;
     }
 
-    //²éÕÒ±¨¾¯ĞÅÏ¢
+    //æŸ¥æ‰¾æŠ¥è­¦ä¿¡æ¯
     oss.str ("");
     oss << "SELECT zhd_xlh "
         <<  "FROM T_TerminalInfo "
@@ -1169,7 +1169,7 @@ int CEDUDBMgr::GetTerminalList(PageList &List,FileDirArray &Array)
     return DB_ERR_SUCCESS;
 }
 
-//»ñÈ¡±¨¾¯ĞÅÏ¢
+//è·å–æŠ¥è­¦ä¿¡æ¯
 int CEDUDBMgr::GetBreathAlarmInfo(PageList &List, BreathAlarmInfo &stru, BreathAlarmInfoArray &Array)
 {
     int nDBIndex = GetDBIndexID ();
@@ -1194,7 +1194,7 @@ int CEDUDBMgr::GetBreathAlarmInfo(PageList &List, BreathAlarmInfo &stru, BreathA
     char **row = NULL;
     int nAffectedRows = RowsInit;
 
-    //Í³¼Æµ±Ç°Ìõ¼şÏÂ±¨¾¯ĞÅÏ¢ÊıÁ¿
+    //ç»Ÿè®¡å½“å‰æ¡ä»¶ä¸‹æŠ¥è­¦ä¿¡æ¯æ•°é‡
     oss.str ("");
     oss << "select count(*) from alarm_breath where type&" << stru.wAlarmType <<
            " and ZD_xlh='"<< szEscServerId << "' and alarm_time between FROM_UNIXTIME(" << stru.dwStartTime
@@ -1209,13 +1209,13 @@ int CEDUDBMgr::GetBreathAlarmInfo(PageList &List, BreathAlarmInfo &stru, BreathA
         return DB_ERR_DBDATA_ERROR;
     }
 
-    //Í³¼Æ½á¹û
+    //ç»Ÿè®¡ç»“æœ
     //cout << "GetGrantList() before" << endl;
     row = m_pDBIdx[nDBIndex]->getRow ();
     WORD wCount = (WORD) atoi(row[0]);
     //cout << "GetGrantList() after  wCount=" << wCount << endl;
     WORD wListNum = List.wListNum;
-    //¼ÆËãÒ³Êı
+    //è®¡ç®—é¡µæ•°
     if ((wCount == 0)||(0 >= wListNum))
     {
         List.wAllPageNum = 0;
@@ -1232,7 +1232,7 @@ int CEDUDBMgr::GetBreathAlarmInfo(PageList &List, BreathAlarmInfo &stru, BreathA
         }
     }
 
-    //²éÕÒ±¨¾¯ĞÅÏ¢
+    //æŸ¥æ‰¾æŠ¥è­¦ä¿¡æ¯
     oss.str ("");
     oss << "SELECT type, UNIX_TIMESTAMP(alarm_time), alarm_duration";
     oss << " FROM alarm_breath"
@@ -1291,7 +1291,7 @@ int CEDUDBMgr::GetAlarmInfo2(PageList &List,BreathAlarmInfo2 &stru, BreathAlarmI
     char **row = NULL;
     int nAffectedRows = RowsInit;
 
-    //Í³¼Æµ±Ç°Ìõ¼şÏÂ±¨¾¯ĞÅÏ¢ÊıÁ¿
+    //ç»Ÿè®¡å½“å‰æ¡ä»¶ä¸‹æŠ¥è­¦ä¿¡æ¯æ•°é‡
     oss.str ("");
     oss << "select count(*) from alarm_info where type&" << stru.wAlarmType <<
            " and ZD_xlh='"<< szEscServerId << "' and alarm_time between FROM_UNIXTIME(" << stru.dwStartTime
@@ -1306,13 +1306,13 @@ int CEDUDBMgr::GetAlarmInfo2(PageList &List,BreathAlarmInfo2 &stru, BreathAlarmI
         return DB_ERR_DBDATA_ERROR;
     }
 
-    //Í³¼Æ½á¹û
+    //ç»Ÿè®¡ç»“æœ
     //cout << "GetBreathAlarmInfo2() before" << endl;
     row = m_pDBIdx[nDBIndex]->getRow ();
     WORD wCount = (WORD) atoi(row[0]);
     //cout << "GetBreathAlarmInfo2() after  wCount=" << wCount << endl;
     WORD wListNum = List.wListNum;
-    //¼ÆËãÒ³Êı
+    //è®¡ç®—é¡µæ•°
     if ((wCount == 0)||(0 >= wListNum))
     {
         List.wAllPageNum = 0;
@@ -1329,7 +1329,7 @@ int CEDUDBMgr::GetAlarmInfo2(PageList &List,BreathAlarmInfo2 &stru, BreathAlarmI
         }
     }
 
-    //²éÕÒ±¨¾¯ĞÅÏ¢
+    //æŸ¥æ‰¾æŠ¥è­¦ä¿¡æ¯
     oss.str ("");
     oss << "SELECT type, UNIX_TIMESTAMP(alarm_time), param";
     oss << " FROM alarm_info"
@@ -1364,7 +1364,7 @@ int CEDUDBMgr::GetAlarmInfo2(PageList &List,BreathAlarmInfo2 &stru, BreathAlarmI
     return DB_ERR_SUCCESS;
 }
 /*
-//»ñÈ¡¼ì²âÊı¾İÎÄ¼ş
+//è·å–æ£€æµ‹æ•°æ®æ–‡ä»¶
 int CEDUDBMgr::GetDataInfo (PageList &List, DataInfo &stru, DataInfoArray &Array)
 {
     int nDBIndex = GetDBIndexID ();
@@ -1389,7 +1389,7 @@ int CEDUDBMgr::GetDataInfo (PageList &List, DataInfo &stru, DataInfoArray &Array
     char **row = NULL;
     int nAffectedRows = RowsInit;
 
-    //Í³¼Æµ±Ç°Ìõ¼şÏÂĞÅÏ¢ÊıÁ¿
+    //ç»Ÿè®¡å½“å‰æ¡ä»¶ä¸‹ä¿¡æ¯æ•°é‡
     oss.str ("");
     oss << "select count(*) from monitor_info where type&" << stru.wType <<
            " and BT_number='"<< szEscServerId << "' and starttime < FROM_UNIXTIME(" << stru.dwEndtime
@@ -1404,11 +1404,11 @@ int CEDUDBMgr::GetDataInfo (PageList &List, DataInfo &stru, DataInfoArray &Array
         return DB_ERR_DBDATA_ERROR;
     }
 
-    //Í³¼Æ½á¹û
+    //ç»Ÿè®¡ç»“æœ
     row = m_pDBIdx[nDBIndex]->getRow ();
     WORD wCount = (WORD) atoi(row[0]);
     WORD wListNum = List.wListNum;
-    //¼ÆËãÒ³Êı
+    //è®¡ç®—é¡µæ•°
     if ((wCount == 0)||(0 >= wListNum))
     {
         List.wAllPageNum = 0;
@@ -1425,7 +1425,7 @@ int CEDUDBMgr::GetDataInfo (PageList &List, DataInfo &stru, DataInfoArray &Array
         }
     }
 
-    //²éÕÒ¼ì²âĞÅÏ¢
+    //æŸ¥æ‰¾æ£€æµ‹ä¿¡æ¯
     oss.str ("");
     oss << "select UNIX_TIMESTAMP(starttime), UNIX_TIMESTAMP(endtime), filename";
     oss << " from monitor_info WHERE type&" << stru.wType <<
@@ -1458,7 +1458,7 @@ int CEDUDBMgr::GetDataInfo (PageList &List, DataInfo &stru, DataInfoArray &Array
 }
 */
 
-//Ìí¼Ó¼ì²âÊı¾İË÷Òı
+//æ·»åŠ æ£€æµ‹æ•°æ®ç´¢å¼•
 int CEDUDBMgr::AddDataInfo(DataInfo &stru)
 {
     int nDBIndex = GetDBIndexID();
@@ -1501,12 +1501,12 @@ int CEDUDBMgr::AddDataInfo(DataInfo &stru)
         return DB_ERR_DBDATA_ERROR;
     }
 
-    //Ö´ĞĞ³É¹¦
+    //æ‰§è¡ŒæˆåŠŸ
     m_pDBIdx[nDBIndex]->ThreadUnlock();
     return DB_ERR_SUCCESS;
 }
 
-//»ñÈ¡¸ÉÔ¤Ê±¼ä²ÎÊı
+//è·å–å¹²é¢„æ—¶é—´å‚æ•°
 int CEDUDBMgr::GetIpeTime(GsTime &stru)
 {
     int nDBIndex = GetDBIndexID();
@@ -1557,12 +1557,12 @@ int CEDUDBMgr::GetIpeTime(GsTime &stru)
         //m_pDBTrace->TraceVarIn (" type=[%s],  time=[%s], \n",aAlarmInfo.wAlarmType,aAlarmInfo.wAlarmType );
     }
 
-    //Ö´ĞĞ³É¹¦
+    //æ‰§è¡ŒæˆåŠŸ
     m_pDBIdx[nDBIndex]->ThreadUnlock();
     return DB_ERR_SUCCESS;
 }
 
-//ÉèÖÃ¸ÉÉæÊ±¼ä²ÎÊı
+//è®¾ç½®å¹²æ¶‰æ—¶é—´å‚æ•°
 int CEDUDBMgr::SetIpeTime(GsTime &stru)
 {
     int nDBIndex = GetDBIndexID();
@@ -1598,7 +1598,7 @@ int CEDUDBMgr::SetIpeTime(GsTime &stru)
         m_pDBIdx[nDBIndex]->ThreadUnlock();
         return DB_ERR_DBDATA_ERROR;
     }
-    //Ö´ĞĞ³É¹¦
+    //æ‰§è¡ŒæˆåŠŸ
     m_pDBIdx[nDBIndex]->ThreadUnlock();
     return DB_ERR_SUCCESS;
 }
@@ -1670,17 +1670,17 @@ int CEDUDBMgr::UpdateAbnormal(AbnormalStat &Astru)
     getSleepStatInfo(SMstru, slArray);
     int sAsize = slArray.size();
 
-    int flagtime = 0;   //Ê±¼ä±ê¼Ç
-    int befortime = 0;  //Ç°Ò»¸öÊ±¼ä
-    int allSleepCount= 0;   //×ÜË¯Ãß¼ÆÊı
+    int flagtime = 0;   //æ—¶é—´æ ‡è®°
+    int befortime = 0;  //å‰ä¸€ä¸ªæ—¶é—´
+    int allSleepCount= 0;   //æ€»ç¡çœ è®¡æ•°
     int deepSleepCount = 0;
-    int bedCount= 0;        //ÔÚ´²¼ÆÊı
-    int awakCount= 0;       //¾õĞÑ¼ÆÊı
-    int leaveCount = 0;     //ÎŞÈË¼ÆÊı
-    int NACount=0;         //Á¬Ğø¾õĞÑ¼ÆÊı
+    int bedCount= 0;        //åœ¨åºŠè®¡æ•°
+    int awakCount= 0;       //è§‰é†’è®¡æ•°
+    int leaveCount = 0;     //æ— äººè®¡æ•°
+    int NACount=0;         //è¿ç»­è§‰é†’è®¡æ•°
     int ahis = 0;
     int ahio = 0;
-    WORD statflag = 0;   //×´Ì¬±êÊ¶
+    WORD statflag = 0;   //çŠ¶æ€æ ‡è¯†
     for(int j=0; j<sAsize; j++)
     {
         flagtime = slArray[j].dwTime;
@@ -1700,7 +1700,7 @@ int CEDUDBMgr::UpdateAbnormal(AbnormalStat &Astru)
         if(statflag == 3)
         {
             awakCount++;
-            //³ÖĞø³¬¹ı5·ÖÖÓ£¨NA> 5£©µÄ¾õĞÑ´ÎÊı
+            //æŒç»­è¶…è¿‡5åˆ†é’Ÿï¼ˆNA> 5ï¼‰çš„è§‰é†’æ¬¡æ•°
             if(flagtime-befortime < 90)
             {
                 NACount++;
@@ -1787,7 +1787,7 @@ int CEDUDBMgr::GetAbnormal(AbnormalStat &stru,AbnormalStatArray &Array)
     switch(stru.shtype)
     {
         case 0:
-            {   //²éÕÒstru.dwtimeËùÔÚÌì¿ªÊ¼ºÍ½áÊøÊ±¼ä
+            {   //æŸ¥æ‰¾stru.dwtimeæ‰€åœ¨å¤©å¼€å§‹å’Œç»“æŸæ—¶é—´
                 oss.str("");
                 oss << "SELECT UNIX_TIMESTAMP(sleepStart), UNIX_TIMESTAMP(sleepEnd) "
                     <<    "FROM V_sm_stat "
@@ -1809,7 +1809,7 @@ int CEDUDBMgr::GetAbnormal(AbnormalStat &stru,AbnormalStatArray &Array)
                 stru.dwSleepBTime = atoi(row[0]);
                 stru.dwSleepETime = atoi(row[1]);
 
-                //»ñÈ¡stru.dwtimeËùÔÚÌìµÄÊı¾İ
+                //è·å–stru.dwtimeæ‰€åœ¨å¤©çš„æ•°æ®
                 oss.str ("");
                 oss << "SELECT HOUR(stattime),sum(AHIS),sum(AHIO),SUM(stat1=0)*100/count(stat1) "
                     <<  "FROM T_sm_stat "
@@ -1877,7 +1877,7 @@ int CEDUDBMgr::GetAbnormal(AbnormalStat &stru,AbnormalStatArray &Array)
     return DB_ERR_SUCCESS;
 }
 
-//²âÊÔºôÎüÊÂ¼ş±¨¸æ
+//æµ‹è¯•å‘¼å¸äº‹ä»¶æŠ¥å‘Š
 int CEDUDBMgr::tryBreathEntRpt(BreathEntRptInfo &stru, BreathEntRptInfoArray &Array)
 {
     int nDBIndex = GetDBIndexID();
@@ -1902,7 +1902,7 @@ int CEDUDBMgr::tryBreathEntRpt(BreathEntRptInfo &stru, BreathEntRptInfoArray &Ar
     char **row = NULL;
     int nAffectedRows=RowsInit;
 
-    //Í³¼Æ×Ü¸öÊı
+    //ç»Ÿè®¡æ€»ä¸ªæ•°
     oss.str("");
     oss << "SELECT count(*) "
         <<      "FROM alarm_breath "
@@ -1994,12 +1994,12 @@ int CEDUDBMgr::tryBreathEntRpt(BreathEntRptInfo &stru, BreathEntRptInfoArray &Ar
         stru.level=0x4;
         stru.SymptomType = 4;
     }
-    //Ö´ĞĞ³É¹¦
+    //æ‰§è¡ŒæˆåŠŸ
     m_pDBIdx[nDBIndex]->ThreadUnlock();
     return DB_ERR_SUCCESS;
 }
 
-//»ñÈ¡Î´´¦ÀíÎÄ¼şÄ¿Â¼
+//è·å–æœªå¤„ç†æ–‡ä»¶ç›®å½•
 int CEDUDBMgr::getUnprocDir(FileDirArray &Array)
 {
     int nDBIndex = GetDBIndexID ();
@@ -2054,7 +2054,7 @@ int CEDUDBMgr::getUnprocDir(FileDirArray &Array)
     return DB_ERR_SUCCESS;
 }
 
-//»ñÈ¡×´Ì¬ÎÄ¼şÁĞ±í
+//è·å–çŠ¶æ€æ–‡ä»¶åˆ—è¡¨
 int CEDUDBMgr::getStatFilelist(SFpara &stru, FileDirArray &Array)
 {
     int nDBIndex = GetDBIndexID ();
@@ -2117,7 +2117,7 @@ int CEDUDBMgr::getStatFilelist(SFpara &stru, FileDirArray &Array)
         m_pDBTrace->TraceVarOut("filename=[%s]\n", Filename.szZD_xlh);
     }
 
-    WORD wCount = Array.size(); //Êµ¼Ê¸öÊı
+    WORD wCount = Array.size(); //å®é™…ä¸ªæ•°
     oss.str("");
     oss << "UPDATE monitor_info SET flag = 1"
         << " WHERE ZD_xlh = '" << chXlh << "' and filename in (";
@@ -2342,7 +2342,7 @@ int CEDUDBMgr::GetBRInfo(TimeXlh &stru, SleepArray &Array)
     return DB_ERR_SUCCESS;
 }
 
-//»ñÈ¡ËùÓĞÖÕ¶ËÉè±¸ĞòÁĞºÅ
+//è·å–æ‰€æœ‰ç»ˆç«¯è®¾å¤‡åºåˆ—å·
 int CEDUDBMgr::GetAllZhDxlh(FileDirArray &Array)
 {
     int nDBIndex = GetDBIndexID();
@@ -2484,7 +2484,7 @@ int CEDUDBMgr::AddHX(HX &stru)
         return DB_ERR_DBDATA_ERROR;
     }
 
-    //Ö´ĞĞ³É¹¦
+    //æ‰§è¡ŒæˆåŠŸ
     m_pDBIdx[nDBIndex]->ThreadUnlock();
     return DB_ERR_SUCCESS;
 }
